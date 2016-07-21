@@ -1,5 +1,28 @@
 \section*{Introduction} % Pas de numérotation
 \addcontentsline{toc}{section}{Introduction} % Ajout dans la table des matières
 
-Ce mémoire est un exposé du stage que j'ai réalisé dans l'entreprise Synetis, pour clôturer mon Master 2 d'Informatique à l'université de Bordeaux, tout en m'apportant une première expérience en milieu industriel. Ce stage, comme le titre du document l'indique, 
-avait pour but de réaliser un état de l'art des solutions de gestion des comptes à privilèges. Les comptes à privilèges, sont, dans le milieu des technologies de l'information, des comptes ayant des droits d'administration plus élevés que ceux d'un utilisateur lambda. Par exemple, le compte \texttt{root} d'une machine opérant un système d'exploitation Linux, est un compte à privilèges.
+-> Environnement professionnel et l'entreprise. <-
+
+-> Objectifs du travail personnel et moyens mis en oeuvre pour les atteindre <-
+
+-> Présentation calire du plan adopté poru la suite du corps du mémoire <-
+
+Pas plus de 2 pages.
+
+La gestion de comptes à privilèges (PAM\footnote{Privileged Access Management}) est une sous-section de la gestion d’identité et d’accès (IAM\footnote{Identity and Access Management}). L’IAM est un large champ de contrôle d’accès qui se veut critique dans le domaine des technologies de l’information.\\
+Il existe bien sûr une multitude de connexions spécifiques entre les utilisateurs et les dépendances technologiques. La PAM n’est que l’une d’entre elles.\\
+La PAM est apparue au début des années 2000 à cause de l’impossibilité des solutions d’IAM de contrôler, gérer et faire des rapports sur les accès aux serveurs, aux bases de données, aux équipements réseau et tout autre application critique au sein d’une organisation. Cette solution entraîne une gestion d’un petit nombre d’utilisateurs, mais d’un grand nombre de dépendances technologiques ayant une importance clef dans le fonctionnement des infrastructures.
+
+La fonctionnalité principale d’une solution de gestion d’identité privilégiée gravite autour de la sécurisation de l’accès aux ressources critiques par les administrateurs IT.\\
+Plus précisément, des privilèges spécifiques peuvent être délivrés à des comptes d’utilisateur. Ces privilèges sont dépendants des systèmes et des applications impliqués, mais ils peuvent inclure la capacité à écrire des données, créer des comptes, exécuter une mission, pour ne citer que quelques exemples. En plus de contrôler l’accès avec un grand niveau de finesse, beaucoup de solutions fournissent aussi un package d’actions disponibles lors de l’utilisation d’un compte privilégié. Dans le but d’assurer la sécurité de ces comptes, les solutions exploitent un large éventail de mécanismes, comme par exemple, l’utilisation de clefs SSH, la rotation de mot de passe et l’ajout de multiples authentifications (authentification multi-facteur).\\
+Les capacités de la gestion d’identité privilégiée sont devenues de plus en plus importantes, notamment avec la croissance des requis de sécurité et des règles de conformité (l’ISO 27001 par exemple). Contrôler et tracer finement l’accès des utilisateurs est critique pour la majorité des règles de régulation comme PCI DSS\footnote{Standard propriétaire de sécurité de l’information pour les organisations utilisant des cartes de crédit}. Il est aussi important de noter que de nombreux exploits compromettant des données sont liés à la compromission d’accréditations privilégiées. Avec la recrudescence des tentatives de hack et les contrecoups économiques de plus en plus conséquents, les entreprises commencent à apporter de plus en plus d’intérêt à la gestion et au contrôle des comptes à privilèges. En effet, les tentatives de piratage sont de plus en plus variées : du social engineering, au vol de ces accréditations par une brèche dans la sécurité en passant par des brute force de mot de passe n’ayant pas une complexité suffisante\footnote{L'utilisation de mots de passe faibles tels que \texttt{password}, \texttt{admin}, \texttt{1234}, \texttt{azerty1234} ou \texttt{Abcd1234} reste encore très fréquente. Pour trouver ces mots de passe faibles, la technique la plus employée est le brute force avec un dictionnaire de mots de passe. Voir cet article de 2013 traitant d’une publication de plus d’un milliard de mots de passe : http://korben.info/une-liste-de-15-milliards-de-mots-de-passe.html}.\\
+L’objectif est de mettre en place un système de contrôle des risques liés aux comptes à privilèges, donc tout d’abord avoir un socle central d’accès. Ce socle doit constituer l’élément central du système d'information par lequel circulent tous les flux venant des utilisateurs vers les données de l’entreprise. Ainsi, ce socle gère tous les accès aux ressources protégées, et les utilisateurs n’ont plus à connaître les mots de passe des ressources, mais juste leur mot de passe personnel pour se connecter au socle principal.\\
+Le choix d’une solution doit prendre en compte l’environnement technique, les habitudes des administrateurs et les logiciels utilisés par l’entreprise.\\
+Afin de parvenir à un système sûr et performant, nous pouvons dégager les objectifs suivants :
+\begin{itemize}
+	\item Centraliser l’accès aux données de l’entreprise.
+	\item Sécuriser les comptes à privilèges.
+	\item Gérer de manière forte des mots de passe et établir une politique d’authentification forte.
+	\item Journaliser les activités des comptes à privilèges.
+	\item Automatiser les processus pour améliorer la productivité tout en renforçant la sécurité.
+\end{itemize}
