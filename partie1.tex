@@ -1,24 +1,56 @@
-\section{Section}
-
-\subsection{Sous section}
-
-\subsubsection{Sous sous section}
-
-\paragraph{Paragraphe}
-
-Pas plus bas dans la hiérarchie. Minimum 2 éléments par division hiérarchique.
-
-Equilibrer la taille de chaque chapitre (à l'exception de l'introduction et de la conclusion).
-
-Exemple de développement :
-- Problématique
-- Matériels et méthodes
-- Résultats et discussion
+%\section{Section}
+%
+%\subsection{Sous section}
+%
+%\subsubsection{Sous sous section}
+%
+%\paragraph{Paragraphe}
+%
+%Pas plus bas dans la hiérarchie. Minimum 2 éléments par division hiérarchique.
+%
+%Equilibrer la taille de chaque chapitre (à l'exception de l'introduction et de la conclusion).
+%
+%Exemple de développement :
+%- Problématique
+%- Matériels et méthodes
+%- Résultats et discussion
 
 %\begin{figure}[!ht]
 %    \center
 %    \includegraphics[width=0.5\textwidth]{./images/logo-univ.jpg}
 %    \caption{logo université, échelle 50\% de la page}
 %\end{figure}
+\section{Problématique : comment pallier le manque de contrôle des comptes privilégiés}
+
+L'objectif général est de résoudre le problème de manque de contrôle et de monitoring des comptes à privilèges. Afin de parvenir à ce résultat, plusieurs solutions ont été développées par des éditeurs, le but final de ce projet étant de déterminer quelle est, ou quelles sont, la ou les meilleures solutions permettant de résoudre ce problème.\\
+Pour répondre à cette problématique, nous allons d'abord nous intéresser aux raisons pour lesquelles ces comptes sont des points clefs de la sécurité des systèmes d'information. Ensuite, nous allons démontrer l'importance des contrôles sur ces comptes à privilèges puis mettre en avant les limitations que peuvent avoir les solutions de PAM.
+
+\subsection{Un point clef de la sécurité des systèmes d'information}
+
+\paragraph{Une cible de choix pour les pirates}
+Un compte privilégié est un compte utilisé par les administrateurs système et réseau, ainsi que par les équipes de sécurité pour accéder aux ressources réseau comme les serveurs, les pare-feux, les switches, les routeurs, les ordinateurs, les applications ou les base de données avec des droits élevés. Ces comptes sont nécessaire à la maintenance d'une infrastructure, tout comme aux interventions de réparation, de diagnostique ou gestion de situations de crise\footnote{Attaque sur un serveur par exemple}. Dans de grands groupes, il peut y avoir un grand nombre de ces comptes, de l'ordre de la centaine voir du millier d'entités, réparti sur plusieurs sites.\\
+Ces comptes peuvent aussi être des comptes d'application communicant avec d'autres applications\footnote{A2A : Application To Application, littéralement d'application à application}, comme par exemple un serveur faisant une sauvegarde régulière sur un autre serveur de récupération.\\
+Tous ces comptes ne sont pas surveillés par les traditionnels gestionnaires d'identités, seul un mot de passe permet d'y accéder. De plus ces comptes sont très souvent des comptes partagés entre plusieurs administrateurs pour une question de facilité de gestion.\\
+Ainsi, une personne mal intentionnée réussissant à voler les accès d'un tel compte verrait son pouvoir de destruction, voir de vol d'information sans limites, ce qui en fait une cible privilégiée par les pirates informatiques.
+
+\paragraph{Un manque de visibilité d'actions} Comme abordé en \ref{intro}, il existe un grand manque de visibilité sur les actions des comptes à privilèges. En effet, ces comptes aux droits élevés voir sans limites, ne sont ni tracés, ni surveillés. Ceci peut avoir plusieurs mauvaises incidences, certaines intentionnelles et malveillantes, d'autre involontaires mais tout de même paralysantes.\\
+La première conséquence serait le vol ou le dévoilement d'informations confidentielles, ainsi que le sabotage volontaire d'un équipement.
+
+\subsection{L'importance d'un contrôle des comptes à privilèges}
 
 
+
+\subsection{Les limitations des solutions PAM}
+
+
+
+%L’objectif est de mettre en place un système de contrôle des risques liés aux comptes à privilèges, donc tout d’abord avoir un socle central d’accès. Ce socle doit constituer l’élément central du système d'information par lequel circulent tous les flux venant des utilisateurs vers les données de l’entreprise. Ainsi, ce socle gère tous les accès aux ressources protégées, et les utilisateurs n’ont plus à connaître les mots de passe des ressources, mais juste leur mot de passe personnel pour se connecter au socle principal.\\
+%Le choix d’une solution doit prendre en compte l’environnement technique, les habitudes des administrateurs et les logiciels utilisés par l’entreprise.\\
+%Afin de parvenir à un système sûr et performant, nous pouvons dégager les objectifs suivants :
+%\begin{itemize}
+%	\item Centraliser l’accès aux données de l’entreprise.
+%	\item Sécuriser les comptes à privilèges.
+%	\item Gérer de manière forte des mots de passe et établir une politique d’authentification forte.
+%	\item Journaliser les activités des comptes à privilèges.
+%	\item Automatiser les processus pour améliorer la productivité tout en renforçant la sécurité.
+%\end{itemize}

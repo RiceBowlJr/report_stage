@@ -1,5 +1,7 @@
 # Mémoire de stage de fin d'études
 
+__Important : toujours nettoyer les répertoires avant de commiter et de pousser les sources.__
+
 Ce document est mon mémoire de stage de fin d'études. Les informations suivantes permettent d'installer le compilateur LaTeX sous Linux/UNIX et compiler les sources du document.
 
 ## Installation du compilateur
