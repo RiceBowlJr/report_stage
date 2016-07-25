@@ -9,6 +9,10 @@
 \usepackage{setspace}
 \usepackage{hyperref}
 \usepackage[french]{varioref}
+\usepackage{enumitem}
+
+\newlist{arrowlist}{itemize}{1}
+\setlist[arrowlist]{label=$\rightarrow$}
 
 \newcommand{\reporttitle}{État de l'art des systèmes de gestion des comptes à privilèges}     % Titre
 \newcommand{\reportauthor}{Alexandre \textsc{Kervadec}} % Auteur
@@ -44,9 +48,11 @@
   \include{concl}
   \cleardoublepage
   \include{references}
-  %\cleardoublepage
-  %\include{annexes}
+%  \cleardoublepage
+%  \include{annexes}
   \cleardoublepage
   \include{resume}
+  \cleardoublepage
+  \include{abstract}
 \end{document}
 

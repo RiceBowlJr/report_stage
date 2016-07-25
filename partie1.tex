@@ -23,7 +23,16 @@
 \section{Problématique : comment pallier le manque de contrôle des comptes privilégiés}
 
 L'objectif général est de résoudre le problème de manque de contrôle et de monitoring des comptes à privilèges. Afin de parvenir à ce résultat, plusieurs solutions ont été développées par des éditeurs, le but final de ce projet étant de déterminer quelle est, ou quelles sont, la ou les meilleures solutions permettant de résoudre ce problème.\\
-Pour répondre à cette problématique, nous allons d'abord nous intéresser aux raisons pour lesquelles ces comptes sont des points clefs de la sécurité des systèmes d'information. Ensuite, nous allons démontrer l'importance des contrôles sur ces comptes à privilèges puis mettre en avant les limitations que peuvent avoir les solutions de PAM.
+Pour répondre à cette problématique, nous allons d'abord expliquer plus en détails ce qu'est un compte à privilèges, puis nous intéresser aux raisons pour lesquelles ces comptes sont des points clefs de la sécurité des systèmes d'information. Ensuite, nous allons expliquer un fonctionnement global et commun aux solutions du marché puis mettre en avant les limitations que peuvent avoir ces solutions de PAM.
+
+\subsection{Contexte}
+
+La gestion de comptes à privilèges (PAM\footnote{Privileged Access Management}) est une sous-section de la gestion d’identité et d’accès (IAM\footnote{Identity and Access Management}). L’IAM est un large champ de contrôle d’accès qui se veut critique dans le domaine des technologies de l’information.\\
+Il existe bien sûr une multitude de connexions spécifiques entre les utilisateurs et les dépendances technologiques. La PAM n’est que l’une d’entre elles.\\
+La PAM est apparue au début des années 2000 à cause de l’impossibilité des solutions d’IAM de contrôler, gérer et faire des rapports sur les accès aux serveurs, aux bases de données, aux équipements réseau et tout autre application critique au sein d’une organisation. Cette solution entraîne une gestion d’un petit nombre d’utilisateurs, mais d’un grand nombre de dépendances technologiques ayant une importance clef dans le fonctionnement des infrastructures.\\
+La fonctionnalité principale d’une solution de gestion d’identité privilégiée gravite autour de la sécurisation de l’accès aux ressources critiques par les administrateurs IT.\\
+Plus précisément, des privilèges spécifiques peuvent être délivrés à des comptes d’utilisateur. Ces privilèges sont dépendants des systèmes et des applications impliqués, mais ils peuvent inclure la capacité à écrire des données, créer des comptes, exécuter une mission, pour ne citer que quelques exemples. En plus de contrôler l’accès avec un grand niveau de finesse, beaucoup de solutions fournissent aussi un package d’actions disponibles lors de l’utilisation d’un compte privilégié. Dans le but d’assurer la sécurité de ces comptes, les solutions exploitent un large éventail de mécanismes, comme par exemple, l’utilisation de clefs SSH, la rotation de mot de passe et l’ajout de multiples authentifications (authentification multi-facteur).\\
+La gestion d’identités privilégiées est devenue de plus en plus importante, notamment avec la croissance des requis de sécurité et des règles de conformité (l’ISO 27001 qui est une norme de sécurité international sur la protection des actifs informationnels par exemple). Il est aussi important de noter que de nombreux exploits\footnote{Element permettant d'exploiter une faille de sécurité} compromettant des données sont liés à la compromission d’accréditations privilégiées. Avec la recrudescence des tentatives de hack et les contrecoups économiques de plus en plus conséquents, les entreprises commencent à apporter de plus en plus d’intérêt à la gestion et au contrôle des comptes à privilèges. En effet, les tentatives de piratage sont de plus en plus variées : du social engineering, au vol de ces accréditations par une brèche dans la sécurité en passant par des \textit{brute force} de mot de passe n’ayant pas une complexité suffisante\footnote{L'utilisation de mots de passe faibles tels que \texttt{password}, \texttt{admin}, \texttt{1234}, \texttt{azerty1234} ou \texttt{Abcd1234} reste encore très fréquente. Pour trouver ces mots de passe faibles, la technique la plus employée est le brute force avec un dictionnaire de mots de passe}.\\
 
 \subsection{Un point clef de la sécurité des systèmes d'information}
 
@@ -33,16 +42,62 @@ Ces comptes peuvent aussi être des comptes d'application communicant avec d'aut
 Tous ces comptes ne sont pas surveillés par les traditionnels gestionnaires d'identités, seul un mot de passe permet d'y accéder. De plus ces comptes sont très souvent des comptes partagés entre plusieurs administrateurs pour une question de facilité de gestion.\\
 Ainsi, une personne mal intentionnée réussissant à voler les accès d'un tel compte verrait son pouvoir de destruction, voir de vol d'information sans limites, ce qui en fait une cible privilégiée par les pirates informatiques.
 
-\paragraph{Un manque de visibilité d'actions} Comme abordé en \ref{intro}, il existe un grand manque de visibilité sur les actions des comptes à privilèges. En effet, ces comptes aux droits élevés voir sans limites, ne sont ni tracés, ni surveillés. Ceci peut avoir plusieurs mauvaises incidences, certaines intentionnelles et malveillantes, d'autre involontaires mais tout de même paralysantes.\\
-La première conséquence serait le vol ou le dévoilement d'informations confidentielles, ainsi que le sabotage volontaire d'un équipement.
+\paragraph{Un manque de visibilité d'actions} Comme abordé en \ref{intro}, il existe un grand manque de visibilité sur les actions des comptes à privilèges. En effet, ces comptes aux droits élevés, ne sont ni tracés, ni surveillés. Ceci peut avoir plusieurs mauvaises incidences, certaines intentionnelles et malveillantes, d'autre involontaires mais tout de même paralysantes.\\
+On peut classer ces incidences en deux catégories, l'une relevant d'une erreur accidentelle, et l'autre d'une volonté de nuire à une organisation :
+\begin{itemize}
+	\item Erreur accidentelle :
+	\begin{arrowlist}
+		\item Erreur de configuration, difficile à retrouver à cause du manque de supervision
+	\end{arrowlist}
+	\item Volonté de nuire :
+	\begin{arrowlist}
+		\item Sabotage d'une configuration, menant à un déni de service
+		\item Vol d'informations sensibles
+	\end{arrowlist}
+\end{itemize}
 
-\subsection{L'importance d'un contrôle des comptes à privilèges}
+Ce manque de  visibilité crée aussi un point noir dans un audit de sécurité : il n'y a aucune détection de faille de sécurité concernant ces comptes.
 
+\subsection{Objectifs d'un système de PAM}
 
+D'après les points précédents, on peut en déduire les spécificités que nous voudrions améliorer vis-à-vis des comptes à privilèges :
+\begin{itemize}
+	\item Centraliser l’accès aux données de l’entreprise
+ 	\item Sécuriser les comptes à privilèges (duo identifiants et mot de passse)
+ 	\item Gérer de manière forte des mots de passe et établir une politique d’authentification forte
+	\item Journaliser et superviser les activités des comptes à privilèges
+\end{itemize}
+
+\subsection{Fonctionnement d'un système de gestion de comptes à privilèges}
+
+\paragraph{Cas général}
+Le principe commun à toutes les solutions des éditeurs est la présence d'une identification sur un serveur central. On peut considérer 2 groupes : les comptes à privilèges et les ressources à protéger. Entre ces 2 entités vient s'intercaler le serveur d'identification, qui fait la passerelle entre les comptes et les ressources.\\
+L'identification d'un utilisateur sur un compte à privilèges se fait sur le serveur central, et l'identification de ce compte à privilèges sur une ressource protégée est déléguée au serveur central. Ainsi, les utilisateurs n'ont plus à gérer et connaître les mots de de passe d'accès au ressources protégées; c'est le serveur central qui détient tous les secrets\footnote{Les logins et mot de passe, aussi appelés \og credrentials \fg{} en anglais.}.\\
+Le serveur central a à sa charge de protéger les mots de passe dans un coffre-fort et de les renouveler régulièrement.
+
+\begin{center}
+	[Intégrer schéma USER <-> BASTION <-> RESSOURCE]
+\end{center}
+
+\paragraph{Deux types d'architecture}
+Malgré le principe de fonctionnement identique pour quasiment toutes les solutions de PAM, il existe cependant des différences au niveau de l'architecture de ces dernières solutions, on distingue 2 grandes familles :
+\begin{itemize}
+	\item Architecture proxy\footnote{Toutes les communications transitent par un point de contrôle.} : les ressources et les comptes d'utilisateurs sont séparés physiquement (ou logiquement\footnote{Redirection des paquet  par port.}), le serveur central gère tout seul les accès aux applications
+	\item Architecture avec agents : les accès aux ressources et la supervision sont gérés par des agents sur les ressources cibles (application installée sur la ressource)
+\end{itemize}
+Nous pouvons rapidement nous rendre compte qu'une architecture avec des agents est beaucoup plus intrusive et longue ou difficile à mettre en place qu'une architecture en proxy, où seul l'adressage est à modifier.
 
 \subsection{Les limitations des solutions PAM}
 
+\paragraph{Le facteur humain} Il faut noter que même avec un système de PAM éprouvé et efficace, nous ne pouvons pas mettre de côté le risque le plus exploitable dans le domaine de la sécurité qu'est le facteur humain. En effet, il est souvent plus facile de tromper un élément du personnel pour une compromission de données. Il sera donc important lors d'un déploiement d'une solution de PAM, d'éduquer le personnel de l'organisation concernée, afin que ces derniers mettent correctement en œuvre les règles de base de la sécurité informatique comme par exemple :
+\begin{itemize}
+	\item Totalement prohiber \og l'effet \textit{post-it} \fg{} : notation de mot de passe sur un \textit{post-it} collé sur l'écran
+	\item  
+\end{itemize}
 
+\paragraph{La détection de comportements anormaux}
+Très peu de solutions de PAM proposent un système de détection de comportements anormaux, comme par exemple un conseiller commercial qui aurait accès aux informations des comptes client, qui abuserait de ce droit.\\
+En effet, même avec une restriction des droits, une supervision et journalisation des activités, une solution de PAM n'est pas une intelligence artificielle qui peut détecter des comportements suspect. Cependant, il reste relativement difficile de repérer ces comportements, qui sont un des problèmes les plus durs à résoudre en sécurité des réseaux.
 
 %L’objectif est de mettre en place un système de contrôle des risques liés aux comptes à privilèges, donc tout d’abord avoir un socle central d’accès. Ce socle doit constituer l’élément central du système d'information par lequel circulent tous les flux venant des utilisateurs vers les données de l’entreprise. Ainsi, ce socle gère tous les accès aux ressources protégées, et les utilisateurs n’ont plus à connaître les mots de passe des ressources, mais juste leur mot de passe personnel pour se connecter au socle principal.\\
 %Le choix d’une solution doit prendre en compte l’environnement technique, les habitudes des administrateurs et les logiciels utilisés par l’entreprise.\\
