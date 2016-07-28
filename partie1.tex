@@ -75,9 +75,11 @@ Le principe commun à toutes les solutions des éditeurs est la présence d'une 
 L'identification d'un utilisateur sur un compte à privilèges se fait sur le serveur central, et l'identification de ce compte à privilèges sur une ressource protégée est déléguée au serveur central. Ainsi, les utilisateurs n'ont plus à gérer et connaître les mots de de passe d'accès au ressources protégées; c'est le serveur central qui détient tous les secrets\footnote{Les logins et mot de passe, aussi appelés \og credrentials \fg{} en anglais.}.\\
 Le serveur central a à sa charge de protéger les mots de passe dans un coffre-fort et de les renouveler régulièrement.
 
-\begin{center}
-	[Intégrer schéma USER <-> BASTION <-> RESSOURCE]
-\end{center}
+\begin{figure}[!ht]
+    \center
+    \includegraphics[width=\textwidth]{./images/Schema_ultra_light_PAM.png}
+    \caption{Fonctionnement général d'un système de PAM}
+\end{figure}
 
 \paragraph{Deux types d'architecture}
 Malgré le principe de fonctionnement identique pour quasiment toutes les solutions de PAM, il existe cependant des différences au niveau de l'architecture de ces dernières solutions, on distingue 2 grandes familles :
