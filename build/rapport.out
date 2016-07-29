@@ -1,0 +1,26 @@
+\BOOKMARK [1][-]{section*.1}{Remerciements}{}% 1
+\BOOKMARK [1][-]{section*.3}{Introduction}{}% 2
+\BOOKMARK [1][-]{section.1}{Probl\351matique : comment pallier le manque de contr\364le des comptes privil\351gi\351s}{}% 3
+\BOOKMARK [2][-]{subsection.1.1}{Contexte}{section.1}% 4
+\BOOKMARK [3][-]{subsubsection.1.1.1}{Les comptes \340 privil\350ges}{subsection.1.1}% 5
+\BOOKMARK [3][-]{subsubsection.1.1.2}{La gestion de comptes \340 privil\350ges}{subsection.1.1}% 6
+\BOOKMARK [2][-]{subsection.1.2}{Un point clef de la s\351curit\351 des syst\350mes d'information}{section.1}% 7
+\BOOKMARK [3][-]{subsubsection.1.2.1}{Une cible de choix pour les pirates}{subsection.1.2}% 8
+\BOOKMARK [3][-]{subsubsection.1.2.2}{Un manque de visibilit\351 d'actions}{subsection.1.2}% 9
+\BOOKMARK [2][-]{subsection.1.3}{Objectifs d'un syst\350me de PAM}{section.1}% 10
+\BOOKMARK [2][-]{subsection.1.4}{Fonctionnement d'un syst\350me de gestion de comptes \340 privil\350ges}{section.1}% 11
+\BOOKMARK [3][-]{subsubsection.1.4.1}{Cas g\351n\351ral}{subsection.1.4}% 12
+\BOOKMARK [3][-]{subsubsection.1.4.2}{Deux types d'architecture}{subsection.1.4}% 13
+\BOOKMARK [2][-]{subsection.1.5}{Les limitations des solutions PAM}{section.1}% 14
+\BOOKMARK [3][-]{subsubsection.1.5.1}{Le facteur humain}{subsection.1.5}% 15
+\BOOKMARK [3][-]{subsubsection.1.5.2}{La d\351tection de comportements anormaux}{subsection.1.5}% 16
+\BOOKMARK [1][-]{section.2}{M\351thodes et moyens mis en \234uvre}{}% 17
+\BOOKMARK [2][-]{subsection.2.1}{Gestion de projet}{section.2}% 18
+\BOOKMARK [3][-]{subsubsection.2.1.1}{Analyse des besoins}{subsection.2.1}% 19
+\BOOKMARK [3][-]{subsubsection.2.1.2}{Planning pr\351visionnel}{subsection.2.1}% 20
+\BOOKMARK [2][-]{subsection.2.2}{Recherche}{section.2}% 21
+\BOOKMARK [3][-]{subsubsection.2.2.1}{Recherche du fonctionnement des solutions}{subsection.2.2}% 22
+\BOOKMARK [3][-]{subsubsection.2.2.2}{Recherche des solutions existantes sur le march\351}{subsection.2.2}% 23
+\BOOKMARK [1][-]{section.3}{R\351sultats et discussion}{}% 24
+\BOOKMARK [1][-]{section*.4}{Conclusion}{}% 25
+\BOOKMARK [1][-]{section*.5}{R\351f\351rences}{}% 26
