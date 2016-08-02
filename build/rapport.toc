@@ -1,29 +1,33 @@
 \select@language {french}
 \contentsline {section}{Remerciements}{1}{section*.1}
-\contentsline {section}{Introduction}{3}{section*.3}
-\contentsline {section}{\numberline {1}Probl\IeC {\'e}matique : comment pallier le manque de contr\IeC {\^o}le des comptes privil\IeC {\'e}gi\IeC {\'e}s}{5}{section.1}
-\contentsline {subsection}{\numberline {1.1}Contexte}{5}{subsection.1.1}
-\contentsline {subsubsection}{\numberline {1.1.1}Les comptes \IeC {\`a} privil\IeC {\`e}ges}{5}{subsubsection.1.1.1}
-\contentsline {subsubsection}{\numberline {1.1.2}La gestion de comptes \IeC {\`a} privil\IeC {\`e}ges}{6}{subsubsection.1.1.2}
-\contentsline {subsection}{\numberline {1.2}Un point clef de la s\IeC {\'e}curit\IeC {\'e} des syst\IeC {\`e}mes d'information}{7}{subsection.1.2}
-\contentsline {subsubsection}{\numberline {1.2.1}Une cible de choix pour les pirates}{7}{subsubsection.1.2.1}
-\contentsline {subsubsection}{\numberline {1.2.2}Un manque de visibilit\IeC {\'e} d'actions}{7}{subsubsection.1.2.2}
-\contentsline {subsection}{\numberline {1.3}Objectifs d'un syst\IeC {\`e}me de PAM}{8}{subsection.1.3}
-\contentsline {subsection}{\numberline {1.4}Fonctionnement d'un syst\IeC {\`e}me de gestion de comptes \IeC {\`a} privil\IeC {\`e}ges}{8}{subsection.1.4}
-\contentsline {subsubsection}{\numberline {1.4.1}Cas g\IeC {\'e}n\IeC {\'e}ral}{8}{subsubsection.1.4.1}
-\contentsline {subsubsection}{\numberline {1.4.2}Deux types d'architecture}{9}{subsubsection.1.4.2}
-\contentsline {subsection}{\numberline {1.5}Les limitations des solutions PAM}{9}{subsection.1.5}
-\contentsline {subsubsection}{\numberline {1.5.1}Le facteur humain}{9}{subsubsection.1.5.1}
-\contentsline {subsubsection}{\numberline {1.5.2}La d\IeC {\'e}tection de comportements anormaux}{10}{subsubsection.1.5.2}
-\contentsline {section}{\numberline {2}M\IeC {\'e}thodes et moyens mis en \IeC {\oe }uvre}{11}{section.2}
-\contentsline {subsection}{\numberline {2.1}Gestion de projet}{11}{subsection.2.1}
-\contentsline {subsubsection}{\numberline {2.1.1}Analyse des besoins}{11}{subsubsection.2.1.1}
-\contentsline {subsubsection}{\numberline {2.1.2}Planning pr\IeC {\'e}visionnel}{12}{subsubsection.2.1.2}
-\contentsline {subsection}{\numberline {2.2}Recherche}{12}{subsection.2.2}
-\contentsline {subsubsection}{\numberline {2.2.1}Recherche du fonctionnement des solutions}{13}{subsubsection.2.2.1}
-\contentsline {subsubsection}{\numberline {2.2.2}Recherche des solutions existantes sur le march\IeC {\'e}}{13}{subsubsection.2.2.2}
-\contentsline {section}{\numberline {3}R\IeC {\'e}sultats et discussion}{15}{section.3}
-\contentsline {section}{Conclusion}{16}{section*.4}
-\contentsline {section}{R\IeC {\'e}f\IeC {\'e}rences}{17}{section*.5}
-\contentsline {paragraph}{R\IeC {\'e}sum\IeC {\'e}}{18}{section*.7}
-\contentsline {paragraph}{Abstract}{19}{section*.8}
+\contentsline {section}{Introduction}{4}{section*.3}
+\contentsline {section}{\numberline {1}Probl\IeC {\'e}matique : comment pallier le manque de contr\IeC {\^o}le des comptes privil\IeC {\'e}gi\IeC {\'e}s}{6}{section.1}
+\contentsline {subsection}{\numberline {1.1}Contexte}{6}{subsection.1.1}
+\contentsline {subsubsection}{\numberline {1.1.1}Les comptes \IeC {\`a} privil\IeC {\`e}ges}{6}{subsubsection.1.1.1}
+\contentsline {subsubsection}{\numberline {1.1.2}La gestion de comptes \IeC {\`a} privil\IeC {\`e}ges}{7}{subsubsection.1.1.2}
+\contentsline {subsection}{\numberline {1.2}Un point clef de la s\IeC {\'e}curit\IeC {\'e} des syst\IeC {\`e}mes d'information}{8}{subsection.1.2}
+\contentsline {subsubsection}{\numberline {1.2.1}Une cible de choix pour les pirates}{8}{subsubsection.1.2.1}
+\contentsline {subsubsection}{\numberline {1.2.2}Un manque de visibilit\IeC {\'e} d'actions}{8}{subsubsection.1.2.2}
+\contentsline {subsection}{\numberline {1.3}Objectifs d'un syst\IeC {\`e}me de PAM}{9}{subsection.1.3}
+\contentsline {subsection}{\numberline {1.4}Fonctionnement d'un syst\IeC {\`e}me de gestion de comptes \IeC {\`a} privil\IeC {\`e}ges}{9}{subsection.1.4}
+\contentsline {subsubsection}{\numberline {1.4.1}Cas g\IeC {\'e}n\IeC {\'e}ral}{9}{subsubsection.1.4.1}
+\contentsline {subsubsection}{\numberline {1.4.2}Deux types d'architecture}{10}{subsubsection.1.4.2}
+\contentsline {subsection}{\numberline {1.5}Les limitations des solutions PAM}{10}{subsection.1.5}
+\contentsline {subsubsection}{\numberline {1.5.1}Le facteur humain}{10}{subsubsection.1.5.1}
+\contentsline {subsubsection}{\numberline {1.5.2}La d\IeC {\'e}tection de comportements anormaux}{11}{subsubsection.1.5.2}
+\contentsline {section}{\numberline {2}M\IeC {\'e}thodes et moyens mis en \IeC {\oe }uvre}{12}{section.2}
+\contentsline {subsection}{\numberline {2.1}Gestion de projet}{12}{subsection.2.1}
+\contentsline {subsubsection}{\numberline {2.1.1}Analyse des besoins}{12}{subsubsection.2.1.1}
+\contentsline {subsubsection}{\numberline {2.1.2}Planning pr\IeC {\'e}visionnel}{13}{subsubsection.2.1.2}
+\contentsline {subsection}{\numberline {2.2}Recherche}{13}{subsection.2.2}
+\contentsline {subsubsection}{\numberline {2.2.1}Recherche du fonctionnement des solutions}{14}{subsubsection.2.2.1}
+\contentsline {subsubsection}{\numberline {2.2.2}Recherche des solutions existantes sur le march\IeC {\'e}}{14}{subsubsection.2.2.2}
+\contentsline {subsection}{\numberline {2.3}Proof of Concept}{15}{subsection.2.3}
+\contentsline {subsubsection}{\numberline {2.3.1}Architecture}{16}{subsubsection.2.3.1}
+\contentsline {subsubsection}{\numberline {2.3.2}Choix des solutions de PAM \IeC {\`a} tester}{18}{subsubsection.2.3.2}
+\contentsline {subsubsection}{\numberline {2.3.3}D\IeC {\'e}ploiement : Wallix AdminBastion}{18}{subsubsection.2.3.3}
+\contentsline {section}{\numberline {3}R\IeC {\'e}sultats et discussion}{19}{section.3}
+\contentsline {section}{Conclusion}{20}{section*.4}
+\contentsline {section}{R\IeC {\'e}f\IeC {\'e}rences}{21}{section*.5}
+\contentsline {paragraph}{R\IeC {\'e}sum\IeC {\'e}}{22}{section*.7}
+\contentsline {paragraph}{Abstract}{23}{section*.8}

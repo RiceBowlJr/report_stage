@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.7.6)  29 JUL 2016 18:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.7.6)  2 AUG 2016 16:14
 entering extended mode
 **./rapport.tex
 (rapport.tex
@@ -642,14 +642,14 @@ LaTeX Info: Redefining \Ref on input line 30.
 \openout2 = `title.aux'.
 
  (title.tex
-<images/logo-univ.jpg, id=107, 4144.48375pt x 1660.2025pt>
+<images/logo-univ.jpg, id=123, 4144.48375pt x 1660.2025pt>
 File: images/logo-univ.jpg Graphic file (type jpg)
 
 <use images/logo-univ.jpg>
 Package pdftex.def Info: images/logo-univ.jpg used on input line 9.
 (pdftex.def)             Requested size: 170.71652pt x 68.37273pt.
 
-<images/mini_logo_synetis.png, id=108, 395.4775pt x 466.74374pt>
+<images/mini_logo_synetis.png, id=124, 395.4775pt x 466.74374pt>
 File: images/mini_logo_synetis.png Graphic file (type png)
 
 <use images/mini_logo_synetis.png>
@@ -680,29 +680,29 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 5.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 5.
-)
-\tf@toc=\write4
-\openout4 = `rapport.toc'.
-
  [2
 
 
-]
+])
+\tf@toc=\write4
+\openout4 = `rapport.toc'.
+
+ [3]
 \openout2 = `intro.aux'.
 
- (intro.tex) [3
+ (intro.tex) [4
 
 
-] [4]
+]
+[5]
 \openout2 = `partie1.aux'.
 
-
-(partie1.tex
+ (partie1.tex
 LaTeX Font Info:    Try loading font information for T1+cmtt on input line 34.
 
 (D:\users\SYNETIS\Alexandre_kervadec\LaTeX\tex\latex\base\t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-) [5
+) [6
 
 
 
@@ -711,15 +711,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 41--47
 
  []
 
-[6] [7]
-<./images/Schema_ultra_light_PAM.png, id=211, 472.76625pt x 195.73125pt>
+[7] [8]
+<./images/Schema_ultra_light_PAM.png, id=235, 472.76625pt x 195.73125pt>
 File: ./images/Schema_ultra_light_PAM.png Graphic file (type png)
 
 <use ./images/Schema_ultra_light_PAM.png>
 Package pdftex.def Info: ./images/Schema_ultra_light_PAM.png used on input line
  91.
 (pdftex.def)             Requested size: 360.0pt x 149.04698pt.
- [8] [9 <./images/Schema_ultra_light_PAM.png>]) [10]
+ [9] [10 <./images/Schema_ultra_light_PAM.png>]) [11]
 \openout2 = `partie2.aux'.
 
  (partie2.tex
@@ -727,47 +727,56 @@ Underfull \hbox (badness 10000) in paragraph at lines 9--10
 
  []
 
-<./images/calendrier_previsionnel.png, id=232, 1394.20876pt x 408.77719pt>
+<./images/calendrier_previsionnel.png, id=256, 1394.20876pt x 408.77719pt>
 File: ./images/calendrier_previsionnel.png Graphic file (type png)
 
 <use ./images/calendrier_previsionnel.png>
 Package pdftex.def Info: ./images/calendrier_previsionnel.png used on input lin
 e 21.
 (pdftex.def)             Requested size: 360.0pt x 105.54977pt.
- [11
+ [12
 
 
 
 ]
 
-LaTeX Warning: Reference `???' on page 12 undefined on input line 34.
+LaTeX Warning: Reference `???' on page 13 undefined on input line 34.
 
-[12 <./images/calendrier_previsionnel.png>]
-<./images/forrester_quadrant.png, id=247, 548.0475pt x 554.82281pt>
+[13 <./images/calendrier_previsionnel.png>]
+<./images/forrester_quadrant.png, id=271, 548.0475pt x 554.82281pt>
 File: ./images/forrester_quadrant.png Graphic file (type png)
 
 <use ./images/forrester_quadrant.png>
 Package pdftex.def Info: ./images/forrester_quadrant.png used on input line 43.
 
 (pdftex.def)             Requested size: 251.9989pt x 255.12pt.
-) [13] [14 <./images/forrester_quadrant.png>]
+
+<./images/tabcomp.png, id=273, 770.88pt x 709.14937pt>
+File: ./images/tabcomp.png Graphic file (type png)
+
+<use ./images/tabcomp.png>
+Package pdftex.def Info: ./images/tabcomp.png used on input line 52.
+(pdftex.def)             Requested size: 360.0pt x 331.16856pt.
+ [14] [15 <./images/forrester_quadrant.png>] [16 <./images/tabcomp.png>] [17]) 
+[18]
 \openout2 = `partie3.aux'.
 
- (partie3.tex) [15
+ (partie3.tex) [19
 
 
 
 ]
 \openout2 = `concl.aux'.
 
- (concl.tex) [16
+ (concl.tex) [20
 
 
 
 ]
 \openout2 = `references.aux'.
 
- (references.tex
+
+(references.tex
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 4.
 
 (D:\users\SYNETIS\Alexandre_kervadec\LaTeX\tex\latex\base\omscmr.fd
@@ -779,7 +788,7 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <8> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 4.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 4.
-) [17
+) [21
 
 
 
@@ -787,14 +796,14 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 \openout2 = `resume.aux'.
 
 
-(resume.tex) [18
+(resume.tex) [22
 
 
 
 ]
 \openout2 = `abstract.aux'.
 
- (abstract.tex) [19
+ (abstract.tex) [23
 
 
 
@@ -816,7 +825,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 57.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 57.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 57.
 Package rerunfilecheck Info: File `rapport.out' has not changed.
-(rerunfilecheck)             Checksum: E0912C7C8842E69A01832ECFEC71D366;2156.
+(rerunfilecheck)             Checksum: CAF0FF820AB0AE62F19DF87BB6860453;2492.
 
 
 LaTeX Warning: There were undefined references.
@@ -824,42 +833,43 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 57.
  ) 
 Here is how much of TeX's memory you used:
- 7357 strings out of 493335
- 109132 string characters out of 3133259
- 204525 words of memory out of 3000000
- 10645 multiletter control sequences out of 15000+200000
- 21698 words of font info for 45 fonts, out of 3000000 for 9000
+ 7396 strings out of 493335
+ 109656 string characters out of 3133259
+ 204894 words of memory out of 3000000
+ 10661 multiletter control sequences out of 15000+200000
+ 22384 words of font info for 46 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 29i,9n,30p,1405b,479s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 29i,9n,30p,1405b,565s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\SYNETIS\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi60
 0\ecrm0600.pk> <C:\Users\SYNETIS\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknap
 pen\ec\dpi600\ecti0800.pk> <C:\Users\SYNETIS\AppData\Local\MiKTeX\2.9\fonts\pk\
-ljfour\jknappen\ec\dpi600\ecbx0900.pk> <C:\Users\SYNETIS\AppData\Local\MiKTeX\2
-.9\fonts\pk\ljfour\jknappen\ec\dpi600\ectt0900.pk> <C:\Users\SYNETIS\AppData\Lo
-cal\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecti1095.pk> <C:\Users\SYNETI
-S\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\eccc0900.pk> <C:\
-Users\SYNETIS\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ectt1
-095.pk> <C:\Users\SYNETIS\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\
-dpi600\ecbx1200.pk> <C:\Users\SYNETIS\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\
-jknappen\ec\dpi600\ecrm0900.pk> <C:\Users\SYNETIS\AppData\Local\MiKTeX\2.9\font
-s\pk\ljfour\jknappen\ec\dpi600\ecrm0800.pk> <C:\Users\SYNETIS\AppData\Local\MiK
-TeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1095.pk> <C:\Users\SYNETIS\AppDa
-ta\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\eccc1095.pk> <C:\Users\S
-YNETIS\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1095.pk>
+ljfour\jknappen\ec\dpi600\ecti0900.pk> <C:\Users\SYNETIS\AppData\Local\MiKTeX\2
+.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx0900.pk> <C:\Users\SYNETIS\AppData\Lo
+cal\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ectt0900.pk> <C:\Users\SYNETI
+S\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecti1095.pk> <C:\
+Users\SYNETIS\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\eccc0
+900.pk> <C:\Users\SYNETIS\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\
+dpi600\ectt1095.pk> <C:\Users\SYNETIS\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\
+jknappen\ec\dpi600\ecbx1200.pk> <C:\Users\SYNETIS\AppData\Local\MiKTeX\2.9\font
+s\pk\ljfour\jknappen\ec\dpi600\ecrm0900.pk> <C:\Users\SYNETIS\AppData\Local\MiK
+TeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0800.pk> <C:\Users\SYNETIS\AppDa
+ta\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1095.pk> <C:\Users\S
+YNETIS\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\eccc1095.pk>
  <C:\Users\SYNETIS\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\
-ecbx1440.pk> <C:\Users\SYNETIS\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappe
-n\ec\dpi600\eccc1200.pk> <C:\Users\SYNETIS\AppData\Local\MiKTeX\2.9\fonts\pk\lj
-four\jknappen\ec\dpi600\ecrm1200.pk> <C:\Users\SYNETIS\AppData\Local\MiKTeX\2.9
-\fonts\pk\ljfour\jknappen\ec\dpi600\ecti1200.pk> <C:\Users\SYNETIS\AppData\Loca
-l\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx2074.pk> <C:\Users\SYNETIS\
-AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\eccc1440.pk><D:/use
-rs/SYNETIS/Alexandre_kervadec/LaTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><
-D:/users/SYNETIS/Alexandre_kervadec/LaTeX/fonts/type1/public/amsfonts/cm/cmsy8.
-pfb>
-Output written on Z:/Alex-K/GitHub/report_stage/build/rapport.pdf (20 pages, 10
-52607 bytes).
+ecrm1095.pk> <C:\Users\SYNETIS\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappe
+n\ec\dpi600\ecbx1440.pk> <C:\Users\SYNETIS\AppData\Local\MiKTeX\2.9\fonts\pk\lj
+four\jknappen\ec\dpi600\eccc1200.pk> <C:\Users\SYNETIS\AppData\Local\MiKTeX\2.9
+\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1200.pk> <C:\Users\SYNETIS\AppData\Loca
+l\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecti1200.pk> <C:\Users\SYNETIS\
+AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx2074.pk> <C:\Us
+ers\SYNETIS\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\eccc144
+0.pk><D:/users/SYNETIS/Alexandre_kervadec/LaTeX/fonts/type1/public/amsfonts/cm/
+cmsy10.pfb><D:/users/SYNETIS/Alexandre_kervadec/LaTeX/fonts/type1/public/amsfon
+ts/cm/cmsy8.pfb>
+Output written on Z:/Alex-K/GitHub/report_stage/build/rapport.pdf (24 pages, 11
+13652 bytes).
 PDF statistics:
- 866 PDF objects out of 1000 (max. 8388607)
- 69 named destinations out of 1000 (max. 500000)
- 234 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 986 PDF objects out of 1000 (max. 8388607)
+ 90 named destinations out of 1000 (max. 500000)
+ 271 words of extra memory for PDF output out of 10000 (max. 10000000)
 

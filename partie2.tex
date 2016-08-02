@@ -44,4 +44,71 @@ La recherche des solutions existantes sur le marché fut assez simple, compte te
     \caption{Quadrant mettant en évidence les acteurs du marché de PAM selon le rapport offre/stratégie et l'indice de présence sur le marché}
 \end{figure}
 
-Nous avons ainsi pu nous retrouver avec une liste de solutions satisfaisante pour pouvoir commencer à faire un comparatif *réaliste* (terme à revoir). Nous avons alors orienté mes recherches vers les spécificités des solutions, en parcourant toute la documentation disponible, en participant à des vision-conférences avec les commerciaux et ingénieurs des maisons d'édition ou en contactant le support. Cette étape a été celle qui a pris le plus de temps dans la période de recherche, qui parfois s'est avérée infructueuse au vu du manque d'informations disponibles et de l'absence de réponse du support (ou plus précisément des réponses me redirigeant vers des documents en ligne ne contenant pas les réponses demandées).
+Nous avons ainsi pu nous retrouver avec une liste de solutions satisfaisante pour pouvoir commencer à faire un comparatif *réaliste* (terme à revoir). Nous avons alors orienté mes recherches vers les spécificités des solutions, en parcourant toute la documentation disponible, en participant à des vision-conférences avec les commerciaux et ingénieurs des maisons d'édition ou en contactant le support. Cette étape a été celle qui a pris le plus de temps dans la période de recherche, qui parfois s'est avérée infructueuse au vu du manque d'informations disponibles et de l'absence de réponse du support (ou plus précisément des réponses me redirigeant vers des documents en ligne ne contenant pas les réponses demandées). C'est par ailleurs une des étapes qui a complètement décalé le calendrier prévisionnel, prenant sur la marge prévue à cet effet.\\
+Cette étape a conduit à éditer un tableau comparatif des solutions, dont nous pouvons trouver un aperçu à la \textsc{Figure }\ref{fig:tabcomp}. Ce tableau comparatif n'est pas disponible en annexe, à cause de sa taille impossible à imprimer, mais il reste tout de même disponible sur demande en format \emph{Microsoft Excel}.
+
+\begin{figure}[!ht]
+    \center
+    \includegraphics[width=\textwidth]{./images/tabcomp.png}
+    \label{fig:tabcomp}
+    \caption{Extrait du tableau comparatif de solutions édité au terme de la phase de recherche}
+\end{figure}
+
+\subsection{Proof of Concept}
+\label{subec:poc}
+
+La phase de conception d'environnement de test s'est déroulée en plusieurs étapes :
+\begin{itemize}
+	\item Conception architecture idéale
+	\item Validation de l'architecture avec le tuteur, et remaniement de cette dernière pour s'adapter aux ressources matériels disponibles chez \textsc{Synetis}, ressources assez limitées car nous étions en saturation de ressources mémoire et processeur sur le serveur interne. Un nouveau serveur est arrivé en fin de stage, mais malheureusement quelques semaines trop tard
+	\item Installation de l'infrastructure et déploiement des solutions à tester
+\end{itemize}
+
+\subsubsection{Architecture}
+\label{par:archi}
+
+L'architecture idéale sur laquelle les solutions devaient être intégrée nous semblait être celle qui se rapprochait le plus d'une situation réelle d'entreprise, comprenant des séparations logiques pour les différents corps de métier (
+
+En effet, les ressources limitées ont réduit notre infrastructure de test au strict minimum, donc une machine de chaque type :
+\begin{itemize}
+	\item \textsc{MS Windows Server 2012 R2} : serveur de test de connexion RDP\footnote{Remote Desktop Protocol : contrôle à distance d'un serveur.}, de configuration des solutions de PAM (base de données \emph{MySQL} et \emph{SQL Server}), de mail (avec le logiciel \emph{hMailServer} \cite{hma} et contrôleur de domaine \emph{Active Directory}
+	\item \textsc{MS Windows Server 2012} : serveur TSE\footnote{Terminal SErvice : permet d'utiliser le serveur pour faire tourner des applications utilisées en bureau distant.} permettant de tester une connexion sur une application distante (\emph{VMWare vSphere Client}\footnote{Programme Windows permettant de configurer un hôte de virtualisation et de faire tourner des machines virtuelles.} dans notre cas)
+	\item \textsc{Linux Debian 8.4.0 Jessie} : serveur Linux permettant de tester une connexion SSH\footnote{Secure SHell : protocole de connexion à distance à une machine Linux/Unix.}
+\end{itemize}
+
+Cette architecture limitée nous a permis de tester et d'éprouver 2 des solutions choisies, tout en respectant les contraintes de ressources établies.\\
+Bien plus que les solutions en elles-même, le déploiement de l'infrastructure de base a nécessité d'autres technologies, que l'ont peut lister en tâches suivantes :
+\begin{itemize}
+	\item Sur Microsoft Windows Server 2012 et 2012 R2 :
+		\begin{arrowlist}
+			\item Installation du rôle contrôleur de domaine\footnote{gestionnaire d'un domaine sous le système d'exploitation Windows.}
+			\item Création et configuration d'un domaine, d'une forêt et de toutes ses dépendances assurant le bon fonctionnement de l'infrastructure
+			\item Création d'utilisateurs de domaine\footnote{Utilisateurs créés dans un annuaire Active Directory, disponible pour toute machine du domaine.} avec les droits nécessaires et suffisant à leur fonctionnement, grâce aux groupes de sécurité Windows (consulter le livre de Minasi \emph{et al.} \cite{min} pour plus d'informations sur Active Directory et la sécurité de Windows Server 2012 R2)
+			\item Création de comptes de service de domaine (MSA\footnote{Managed Service Account : compte Active Directory dédié aux service, le système gère lui-même les mots de passe.}) sous \emph{Powershell}\footnote{Interface en ligne de commande et langage de scripting dédié à Windows.}
+			\item Installation de système de gestion de base de données relationnelle \emph{MySQL} et \emph{SqlServer} et création de bases de données pour les solutions de PAM
+			\item Installation et configuration d'un serveur de mail local \emph{hMailServer} pour récupérer les mails envoyés par les solutions de PAM
+			\item Installation du rôle TSE et configuration de ce dernier avec l'application \emph{VMWare vSphere Client}
+		\end{arrowlist}
+	\item Sur Debian 8.4.0 :
+		\begin{arrowlist}
+			\item Installation du serveur SSH
+			\item Configuration réseau
+		\end{arrowlist}
+\end{itemize}
+
+\subsubsection{Choix des solutions de PAM à tester}
+\label{par:choixsol}
+
+Nous avions fait, au terme de la phase de recherche, une sélection de 3 potentielles solutions à déployer sur nos environnements de test. Ce choix s'était fait en prenant en compte les données présentées dans le tableaux comparatif des solutions dont on a un aperçu dans la \textsc{Figure} \ref{fig:tabcomp}. Ces 3 solutions étaient :
+\begin{itemize}
+	\item \textsc{Wallix AdminBastion}
+	\item \textsc{CyberArk Privileged Account Security Suite}
+	\item \textsc{Thycotic SecretServer}
+\end{itemize}
+
+Nous étions déjà en contact avec \emph{Wallix}, car partenaires et mon tuteur était en train de passer une formation avec eux, pour la solution en question. Nous avons donc pu avoir facilement une installation de leur solution. En revanche, étant partenaire de \emph{Wallix}, \emph{CyberArk} a refusé de nous fournir une version d'évaluation tant que nous n'abandonnions pas notre partenariat, afin qu'il devienne notre partenaire exclusif. Ce choix de \emph{CyberArk} venant du fait que \emph{Wallix} est leur plus gros concurrent en France, car \emph{Wallix} est une entreprise Française et que beaucoup d'entreprises jouent le jeu de faire fonctionner une entreprise locale\footnote{Information fournie par le troisième éditeur, \emph{Thycotic} durant des échanges de mails.}. Nous avons donc déclineé la solution de \emph{CyberArk} et sommes entrés en contact avec \emph{Thycotic}, avec qui nous n'avons pas eu de soucis et qui nous ont offert un suivi remarquable (une communication omniprésente à toutes les étapes de test).
+
+\subsubsection{Déploiement : Wallix AdminBastion}
+\label{par:wallix}
+
+La version d'essai de \emph{Wallix AdminBastion} se présente sous forme d'une machiine virtuelle (fichier \texttt{vmdk}\footnote{VMWare Virtual Disk : format de disque virtuel créé par \emph{VMWare}}).
