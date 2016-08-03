@@ -31,7 +31,7 @@ La première étape a été la recherche d'informations sur le sujet. N'ayant pa
 
 \subsubsection{Recherche du fonctionnement des solutions}
 \label{par:fct_sol}
-La meilleure façon de trouver des informations concernant le fonctionnement d'une solution de PAM s'est d'abord orientée vers la recherche d'informations génériques, comme des tutoriels ou des articles traitant du sujet. Cependant, j'ai fini par réaliser qu'il y avait très peu de ces ressources. La solution fut donc de directement s'orienter vers les solutions des éditeurs, et de tenter de comprendre leur fonctionnement, pour en tirer moi-même un fonctionnement général des solutions. Cette étape resta tout de même laborieuse, les éditeurs ne partageant pas énormément d'information quant à l'architecture ou le fonctionnement technique de leurs solutions, mais plutôt des caractéristiques de leur solution. Ceci ne m'empêcha pas de pouvoir trouver assez de solutions pour pouvoir en déduire une architecture assez claire, qui me donnait une vision d'ensemble du fonctionnement\footnote{Fonctionnement décrit dans un schéma à la section \ref{???}} d'une solution de PAM.\\
+La meilleure façon de trouver des informations concernant le fonctionnement d'une solution de PAM s'est d'abord orientée vers la recherche d'informations génériques, comme des tutoriels ou des articles traitant du sujet. Cependant, j'ai fini par réaliser qu'il y avait très peu de ces ressources. La solution fut donc de directement s'orienter vers les solutions des éditeurs, et de tenter de comprendre leur fonctionnement, pour en tirer moi-même un fonctionnement général des solutions. Cette étape resta tout de même laborieuse, les éditeurs ne partageant pas énormément d'information quant à l'architecture ou le fonctionnement technique de leurs solutions, mais plutôt des caractéristiques de leur solution. Ceci ne m'empêcha pas de pouvoir trouver assez de solutions pour pouvoir en déduire une architecture assez claire, qui me donnait une vision d'ensemble du fonctionnement\footnote{Fonctionnement décrit dans un schéma en \textsc{Annexe}} d'une solution de PAM.\\
 \textbf{INCLURE L'EXPLICATION DE FONCTIONNEMENT EN DÉTAIL ICI ?}
 
 \subsubsection{Recherche des solutions existantes sur le marché}
@@ -111,4 +111,5 @@ Nous étions déjà en contact avec \emph{Wallix}, car partenaires et mon tuteur
 \subsubsection{Déploiement : Wallix AdminBastion}
 \label{par:wallix}
 
-La version d'essai de \emph{Wallix AdminBastion} se présente sous forme d'une machine virtuelle (fichier \texttt{vmdk}\footnote{VMWare Virtual Disk : format de disque virtuel créé par \emph{VMWare}}).
+La version d'essai de \emph{Wallix AdminBastion} se présente sous forme d'une machine virtuelle (fichier \texttt{vmdk}\footnote{VMWare Virtual Disk : format de disque virtuel créé par \emph{VMWare}}).\\
+Cette machine virtuelle est un Debian 8 personnalisé par Wallix, avec leur propre configuration d'usine. Cette machine doit utiliser une base de données \emph{MySQL} externe afin de stocker ses données (logs et accréditations). Nous avons donc créé une base de données sur le serveur \emph{MySQL}

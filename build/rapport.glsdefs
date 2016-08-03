@@ -1,0 +1,30 @@
+\ifglsentryexists{credential}{}%
+{%
+\gls@defglossaryentry{credential}%
+{%
+name={credential},%
+sort={credential},%
+type={main},%
+first={credential},%
+firstplural={credentials},%
+text={credential},%
+plural={credentials},%
+description={est le terme représentant les informations de connexion},%
+descriptionplural={est le terme représentant les informations de connexion},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%

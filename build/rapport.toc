@@ -29,5 +29,9 @@
 \contentsline {section}{\numberline {3}R\IeC {\'e}sultats et discussion}{19}{section.3}
 \contentsline {section}{Conclusion}{20}{section*.4}
 \contentsline {section}{R\IeC {\'e}f\IeC {\'e}rences}{21}{section*.5}
-\contentsline {paragraph}{R\IeC {\'e}sum\IeC {\'e}}{22}{section*.7}
-\contentsline {paragraph}{Abstract}{23}{section*.8}
+\contentsline {section}{Annexe A}{22}{section*.7}
+\contentsline {subsection}{\numberline {3.1}Fonctionnement d\IeC {\'e}taill\IeC {\'e} des solutions de PAM}{22}{subsection.3.1}
+\contentsline {subsubsection}{\numberline {3.1.1}Sans solution de PAM}{22}{subsubsection.3.1.1}
+\contentsline {subsubsection}{\numberline {3.1.2}Avec solution de PAM}{23}{subsubsection.3.1.2}
+\contentsline {paragraph}{R\IeC {\'e}sum\IeC {\'e}}{25}{section*.8}
+\contentsline {paragraph}{Abstract}{26}{section*.9}

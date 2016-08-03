@@ -8,6 +8,7 @@
 \usepackage[pdftex]{graphicx}
 \usepackage{setspace}
 \usepackage{hyperref}
+\usepackage[toc]{glossaries}
 \usepackage[french]{varioref}
 \usepackage{enumitem}
 
@@ -34,8 +35,9 @@
   \cleardoublepage
   \tableofcontents % Table des matières
   \sloppy          % Justification moins stricte : des mots ne dépasseront pas des paragraphes
-  %\cleardoublepage
-  %\include{glossaire}
+  \cleardoublepage
+  \include{glossaire}
+  \makeglossaries
   \cleardoublepage
   \include{intro}
   \cleardoublepage
@@ -48,8 +50,8 @@
   \include{concl}
   \cleardoublepage
   \include{references}
-%  \cleardoublepage
-%  \include{annexes}
+  \cleardoublepage
+  \include{annexes}
   \cleardoublepage
   \include{resume}
   \cleardoublepage
