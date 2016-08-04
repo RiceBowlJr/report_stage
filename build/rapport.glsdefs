@@ -9,8 +9,38 @@ first={credential},%
 firstplural={credentials},%
 text={credential},%
 plural={credentials},%
-description={est le terme représentant les informations de connexion},%
-descriptionplural={est le terme représentant les informations de connexion},%
+description={est le terme représentant les informations de connexion, comme par exemple un couple login/mot de passe ou une carte à puce},%
+descriptionplural={est le terme représentant les informations de connexion, comme par exemple un couple login/mot de passe ou une carte à puce},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{pam}{}%
+{%
+\gls@defglossaryentry{pam}%
+{%
+name={PAM},%
+sort={PAM},%
+type={main},%
+first={PAM},%
+firstplural={PAMs},%
+text={PAM},%
+plural={PAMs},%
+description={Privileged Account Management : gestion des comptes à privilèges},%
+descriptionplural={Privileged Account Management : gestion des comptes à privilèges},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%

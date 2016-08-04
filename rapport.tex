@@ -6,11 +6,14 @@
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[pdftex]{graphicx}
+\usepackage{tikz}
 \usepackage{setspace}
 \usepackage{hyperref}
 \usepackage[toc]{glossaries}
 \usepackage[french]{varioref}
 \usepackage{enumitem}
+
+\makeglossaries
 
 \newlist{arrowlist}{itemize}{1}
 \setlist[arrowlist]{label=$\rightarrow$}
@@ -36,8 +39,10 @@
   \tableofcontents % Table des matières
   \sloppy          % Justification moins stricte : des mots ne dépasseront pas des paragraphes
   \cleardoublepage
-  \include{glossaire}
-  \makeglossaries
+  % \include{glossaire}
+  \newglossaryentry{credential}{name=credential, description={est le terme représentant les informations de connexion, comme par exemple un couple login/mot de passe ou une carte à puce}}
+  \newglossaryentry{pam}{name=PAM, description={Privileged Account Management : gestion des comptes à privilèges}}
+  \printglossaries
   \cleardoublepage
   \include{intro}
   \cleardoublepage

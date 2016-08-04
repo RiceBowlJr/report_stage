@@ -31,17 +31,16 @@ La première étape a été la recherche d'informations sur le sujet. N'ayant pa
 
 \subsubsection{Recherche du fonctionnement des solutions}
 \label{par:fct_sol}
-La meilleure façon de trouver des informations concernant le fonctionnement d'une solution de PAM s'est d'abord orientée vers la recherche d'informations génériques, comme des tutoriels ou des articles traitant du sujet. Cependant, j'ai fini par réaliser qu'il y avait très peu de ces ressources. La solution fut donc de directement s'orienter vers les solutions des éditeurs, et de tenter de comprendre leur fonctionnement, pour en tirer moi-même un fonctionnement général des solutions. Cette étape resta tout de même laborieuse, les éditeurs ne partageant pas énormément d'information quant à l'architecture ou le fonctionnement technique de leurs solutions, mais plutôt des caractéristiques de leur solution. Ceci ne m'empêcha pas de pouvoir trouver assez de solutions pour pouvoir en déduire une architecture assez claire, qui me donnait une vision d'ensemble du fonctionnement\footnote{Fonctionnement décrit dans un schéma en \textsc{Annexe}} d'une solution de PAM.\\
-\textbf{INCLURE L'EXPLICATION DE FONCTIONNEMENT EN DÉTAIL ICI ?}
+La meilleure façon de trouver des informations concernant le fonctionnement d'une solution de \gls{pam} s'est d'abord orientée vers la recherche d'informations génériques, comme des tutoriels ou des articles traitant du sujet. Cependant, j'ai fini par réaliser qu'il y avait très peu de ces ressources. La solution fut donc de directement s'orienter vers les solutions des éditeurs, et de tenter de comprendre leur fonctionnement, pour en tirer moi-même un fonctionnement général des solutions. Cette étape resta tout de même laborieuse, les éditeurs ne partageant pas énormément d'information quant à l'architecture ou le fonctionnement technique de leurs solutions, mais plutôt des caractéristiques de leur solution. Ceci ne m'empêcha pas de pouvoir trouver assez de solutions pour pouvoir en déduire une architecture assez claire, qui me donnait une vision d'ensemble du fonctionnement\footnote{Fonctionnement décrit dans un schéma en \textsc{Annexe} \ref{annexe:A}} d'une solution de \gls{pam}.\\
 
 \subsubsection{Recherche des solutions existantes sur le marché}
 \label{par:sol_market}
-La recherche des solutions existantes sur le marché fut assez simple, compte tenu de la précédente recherche, s'appuyant sur ces solutions en question. Néanmoins, étant parti sur une base de 6 solutions trouvées pour réaliser un descriptif du fonctionnement général d'une solution de PAM, j'ai réussi à trouver plus du double de solutions par la suite, en navigant de lien en lien et en m'inscrivant à des newsletter m'envoyant des rapports tels que celui de l'éditeur \textsc{Forrester} écrit par Cser \cite{acs}.
+La recherche des solutions existantes sur le marché fut assez simple, compte tenu de la précédente recherche, s'appuyant sur ces solutions en question. Néanmoins, étant parti sur une base de 6 solutions trouvées pour réaliser un descriptif du fonctionnement général d'une solution de \gls{pam}, j'ai réussi à trouver plus du double de solutions par la suite, en navigant de lien en lien et en m'inscrivant à des newsletter m'envoyant des rapports tels que celui de l'éditeur \textsc{Forrester} écrit par Cser \cite{acs}.
 
 \begin{figure}[!ht]
     \center
     \includegraphics[width=0.7\textwidth]{./images/forrester_quadrant.png}
-    \caption{Quadrant mettant en évidence les acteurs du marché de PAM selon le rapport offre/stratégie et l'indice de présence sur le marché}
+    \caption{Quadrant mettant en évidence les acteurs du marché de \gls{pam} selon le rapport offre/stratégie et l'indice de présence sur le marché}
 \end{figure}
 
 Nous avons ainsi pu nous retrouver avec une liste de solutions satisfaisante pour pouvoir commencer à faire un comparatif *réaliste* (terme à revoir). Nous avons alors orienté mes recherches vers les spécificités des solutions, en parcourant toute la documentation disponible, en participant à des vision-conférences avec les commerciaux et ingénieurs des maisons d'édition ou en contactant le support. Cette étape a été celle qui a pris le plus de temps dans la période de recherche, qui parfois s'est avérée infructueuse au vu du manque d'informations disponibles et de l'absence de réponse du support (ou plus précisément des réponses me redirigeant vers des documents en ligne ne contenant pas les réponses demandées). C'est par ailleurs une des étapes qui a complètement décalé le calendrier prévisionnel, prenant sur la marge prévue à cet effet.\\
@@ -71,7 +70,7 @@ L'architecture idéale sur laquelle les solutions devaient être intégrée nous
 
 En effet, les ressources limitées ont réduit notre infrastructure de test au strict minimum, donc une machine de chaque type :
 \begin{itemize}
-	\item \textsc{MS Windows Server 2012 R2} : serveur de test de connexion RDP\footnote{Remote Desktop Protocol : contrôle à distance d'un serveur.}, de configuration des solutions de PAM (base de données \emph{MySQL} et \emph{SQL Server}), de mail (avec le logiciel \emph{hMailServer} \cite{hma} et contrôleur de domaine \emph{Active Directory}
+	\item \textsc{MS Windows Server 2012 R2} : serveur de test de connexion RDP\footnote{Remote Desktop Protocol : contrôle à distance d'un serveur.}, de configuration des solutions de \gls{pam} (base de données \emph{MySQL} et \emph{SQL Server}), de mail (avec le logiciel \emph{hMailServer} \cite{hma} et contrôleur de domaine \emph{Active Directory}
 	\item \textsc{MS Windows Server 2012} : serveur TSE\footnote{Terminal SErvice : permet d'utiliser le serveur pour faire tourner des applications utilisées en bureau distant.} permettant de tester une connexion sur une application distante (\emph{VMWare vSphere Client}\footnote{Programme Windows permettant de configurer un hôte de virtualisation et de faire tourner des machines virtuelles.} dans notre cas)
 	\item \textsc{Linux Debian 8.4.0 Jessie} : serveur Linux permettant de tester une connexion SSH\footnote{Secure SHell : protocole de connexion à distance à une machine Linux/Unix.}
 \end{itemize}
@@ -85,8 +84,8 @@ Bien plus que les solutions en elles-même, le déploiement de l'infrastructure 
 			\item Création et configuration d'un domaine, d'une forêt et de toutes ses dépendances assurant le bon fonctionnement de l'infrastructure
 			\item Création d'utilisateurs de domaine\footnote{Utilisateurs créés dans un annuaire Active Directory, disponible pour toute machine du domaine.} avec les droits nécessaires et suffisant à leur fonctionnement, grâce aux groupes de sécurité Windows (consulter le livre de Minasi \emph{et al.} \cite{min} pour plus d'informations sur Active Directory et la sécurité de Windows Server 2012 R2)
 			\item Création de comptes de service de domaine (MSA\footnote{Managed Service Account : compte Active Directory dédié aux service, le système gère lui-même les mots de passe.}) sous \emph{Powershell}\footnote{Interface en ligne de commande et langage de scripting dédié à Windows.}
-			\item Installation de système de gestion de base de données relationnelle \emph{MySQL} et \emph{SqlServer} et création de bases de données pour les solutions de PAM
-			\item Installation et configuration d'un serveur de mail local \emph{hMailServer} pour récupérer les mails envoyés par les solutions de PAM
+			\item Installation de système de gestion de base de données relationnelle \emph{MySQL} et \emph{SqlServer} et création de bases de données pour les solutions de \gls{pam}
+			\item Installation et configuration d'un serveur de mail local \emph{hMailServer} pour récupérer les mails envoyés par les solutions de \gls{pam}
 			\item Installation du rôle TSE et configuration de ce dernier avec l'application \emph{VMWare vSphere Client}
 		\end{arrowlist}
 	\item Sur Debian 8.4.0 :
@@ -96,7 +95,7 @@ Bien plus que les solutions en elles-même, le déploiement de l'infrastructure 
 		\end{arrowlist}
 \end{itemize}
 
-\subsubsection{Choix des solutions de PAM à tester}
+\subsubsection{Choix des solutions de \gls{pam} à tester}
 \label{par:choixsol}
 
 Nous avions fait, au terme de la phase de recherche, une sélection de 3 potentielles solutions à déployer sur nos environnements de test. Ce choix s'était fait en prenant en compte les données présentées dans le tableaux comparatif des solutions dont on a un aperçu dans la \textsc{Figure} \ref{fig:tabcomp}. Ces 3 solutions étaient :
@@ -112,4 +111,4 @@ Nous étions déjà en contact avec \emph{Wallix}, car partenaires et mon tuteur
 \label{par:wallix}
 
 La version d'essai de \emph{Wallix AdminBastion} se présente sous forme d'une machine virtuelle (fichier \texttt{vmdk}\footnote{VMWare Virtual Disk : format de disque virtuel créé par \emph{VMWare}}).\\
-Cette machine virtuelle est un Debian 8 personnalisé par Wallix, avec leur propre configuration d'usine. Cette machine doit utiliser une base de données \emph{MySQL} externe afin de stocker ses données (logs et accréditations). Nous avons donc créé une base de données sur le serveur \emph{MySQL}
+Cette machine virtuelle est un Debian 8 personnalisé par Wallix, avec leur propre configuration d'usine. Elle doit utiliser une base de données \emph{MySQL} externe afin de stocker ses données (logs et accréditations). Nous avons donc créé une base de données sur le serveur \emph{MySQL} présent sur la machine Windows Server 2012 R2. On avait donc l'architecture 
