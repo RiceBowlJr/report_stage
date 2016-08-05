@@ -111,4 +111,11 @@ Nous étions déjà en contact avec \emph{Wallix}, car partenaires et mon tuteur
 \label{par:wallix}
 
 La version d'essai de \emph{Wallix AdminBastion} se présente sous forme d'une machine virtuelle (fichier \texttt{vmdk}\footnote{VMWare Virtual Disk : format de disque virtuel créé par \emph{VMWare}}).\\
-Cette machine virtuelle est un Debian 8 personnalisé par Wallix, avec leur propre configuration d'usine. Elle doit utiliser une base de données \emph{MySQL} externe afin de stocker ses données (logs et accréditations). Nous avons donc créé une base de données sur le serveur \emph{MySQL} présent sur la machine Windows Server 2012 R2. On avait donc l'architecture 
+Cette machine virtuelle est un Debian 8 personnalisé par Wallix, avec leur propre configuration d'usine. Elle doit utiliser une base de données \emph{MySQL} externe afin de stocker ses données (logs et accréditations). Nous avons donc créé une base de données sur le serveur \emph{MySQL} présent sur la machine Windows Server 2012 R2. On avait donc l'architecture présentée sur la \textsc{Figure} \ref{fig:archi_reelle}
+
+\begin{figure}[!ht]
+    \center
+    \includegraphics[width=\textwidth]{./images/PoC_archi_reelle.png}
+    \label{fig:archi_reelle}
+    \caption{Architecture mise à l'échelle des ressources disponibles chez \textsc{Synetis}}
+\end{figure}
