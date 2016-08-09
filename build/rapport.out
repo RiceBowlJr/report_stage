@@ -26,10 +26,16 @@
 \BOOKMARK [3][-]{subsubsection.2.3.1}{Architecture}{subsection.2.3}% 26
 \BOOKMARK [3][-]{subsubsection.2.3.2}{Choix des solutions de pam \340 tester}{subsection.2.3}% 27
 \BOOKMARK [3][-]{subsubsection.2.3.3}{D\351ploiement : Wallix AdminBastion}{subsection.2.3}% 28
-\BOOKMARK [1][-]{section.3}{R\351sultats et discussion}{}% 29
-\BOOKMARK [1][-]{section*.6}{Conclusion}{}% 30
-\BOOKMARK [1][-]{section*.7}{R\351f\351rences}{}% 31
-\BOOKMARK [1][-]{section*.9}{Annexe A}{}% 32
-\BOOKMARK [2][-]{subsection.1.1}{Fonctionnement d\351taill\351 des solutions de pam}{section*.9}% 33
-\BOOKMARK [3][-]{subsubsection.1.1.1}{Sans solution de pam}{subsection.1.1}% 34
-\BOOKMARK [3][-]{subsubsection.1.1.2}{Avec solution de pam}{subsection.1.1}% 35
+\BOOKMARK [3][-]{subsubsection.2.3.4}{Test : Wallix AdminBastion}{subsection.2.3}% 29
+\BOOKMARK [3][-]{subsubsection.2.3.5}{D\351ploiement : Thycotic Secret Server}{subsection.2.3}% 30
+\BOOKMARK [3][-]{subsubsection.2.3.6}{Test : Thycotic Secret Server}{subsection.2.3}% 31
+\BOOKMARK [1][-]{section.3}{R\351sultats et discussion}{}% 32
+\BOOKMARK [2][-]{subsection.3.1}{Des solutions adapt\351es \340 la taille des infrastructures}{section.3}% 33
+\BOOKMARK [2][-]{subsection.3.2}{L'avenir dans le cloud}{section.3}% 34
+\BOOKMARK [2][-]{subsection.3.3}{CamStudio 2.7.4 : exp\351rience personnelle d'attaque par escalade de privil\350ges}{section.3}% 35
+\BOOKMARK [1][-]{section*.8}{Conclusion}{}% 36
+\BOOKMARK [1][-]{section*.9}{R\351f\351rences}{}% 37
+\BOOKMARK [1][-]{section*.11}{Annexe A}{}% 38
+\BOOKMARK [2][-]{subsection.1.4}{Fonctionnement d\351taill\351 des solutions de pam}{section*.11}% 39
+\BOOKMARK [3][-]{subsubsection.1.4.1}{Sans solution de pam}{subsection.1.4}% 40
+\BOOKMARK [3][-]{subsubsection.1.4.2}{Avec solution de pam}{subsection.1.4}% 41

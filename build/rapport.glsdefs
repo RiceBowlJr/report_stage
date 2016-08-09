@@ -58,3 +58,33 @@ parent={},%
 %
 }%
 }%
+\ifglsentryexists{bastion}{}%
+{%
+\gls@defglossaryentry{bastion}%
+{%
+name={bastion},%
+sort={bastion},%
+type={main},%
+first={bastion},%
+firstplural={bastions},%
+text={bastion},%
+plural={bastions},%
+description={moteur de gestion des connexions aux ressources de la solution de PAM},%
+descriptionplural={moteur de gestion des connexions aux ressources de la solution de PAM},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%

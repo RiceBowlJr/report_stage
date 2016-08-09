@@ -40,7 +40,7 @@ Le diagramme de séquence en \textsc{Figure} \ref{fig:diagseq_sans_PAM} décrit 
 \subsubsection{Avec solution de \gls{pam}}
 \label{par:withpam}
 
-Dans ce scénario, une solution de \gls{pam} est en place. Ainsi les utilisateurs n'ont pas d'accès direct aux ressources cible. Toute l'architecture s'articule autour d'un composant central : le contrôleur d'accès appelé \textbf{bastion}. Tout accès à une ressource cible se fait via ce bastion. Cette architecture centralisée est schématisée dans la \textsc{Figure} \ref{fig:schempam}. Nous allons reprendre point par point un scénarion de connexion réussie à une ressource cible (en correspondance avec les étapes de la \textsc{Figure} \ref{fig:schempam}).
+Dans ce scénario, une solution de \gls{pam} est en place. Ainsi les utilisateurs n'ont pas d'accès direct aux ressources cible. Toute l'architecture s'articule autour d'un composant central : le contrôleur d'accès appelé \gls{bastion}. Tout accès à une ressource cible se fait via ce \gls{bastion}. Cette architecture centralisée est schématisée dans la \textsc{Figure} \ref{fig:schempam}. Nous allons reprendre point par point un scénarion de connexion réussie à une ressource cible (en correspondance avec les étapes de la \textsc{Figure} \ref{fig:schempam}).
 
 \begin{figure}[!ht]
     \center
@@ -50,12 +50,12 @@ Dans ce scénario, une solution de \gls{pam} est en place. Ainsi les utilisateur
 \end{figure}
 
 \begin{enumerate}
-	\item L'utilisateur se connecte au bastion avec ses \glspl{credential}, que l'on appellera ses accès primaires (cadenas bleu)
-	\item Le bastion vérifie l'identité de l'utilisateur en interrogeant le base de données du coffre-fort
+	\item L'utilisateur se connecte au \gls{bastion} avec ses \glspl{credential}, que l'on appellera ses accès primaires (cadenas bleu)
+	\item Le \gls{bastion} vérifie l'identité de l'utilisateur en interrogeant le base de données du coffre-fort
 	\item Le coffre-fort retourne un jeton, qu'on appellera accès secondaire (cadenas rouge), pour se connecter à la ressource cible si l'identification primaire est bonne
-	\item Le bastion génère des logs de connexion
-	\item L'utilisateur se connecte à la ressource protégée via la bastion qui lui fournit les accès secondaires
-	\item Chaque action de l'utilisateur est logué par le bastion, tout comportement interdit alerté voir coupe la connexion à la ressource
+	\item Le \gls{bastion} génère des logs de connexion
+	\item L'utilisateur se connecte à la ressource protégée via la \gls{bastion} qui lui fournit les accès secondaires
+	\item Chaque action de l'utilisateur est logué par le \gls{bastion}, tout comportement interdit alerté voir coupe la connexion à la ressource
 \end{enumerate}
 
 Afin de détailler toutes les actions effectuées, nous allons décrire chaque étape, pour tous les cas d'utilisation, dans le diagramme de séquence en \textsc{Figure} \ref{fig:diagseq_PAM}.
@@ -90,13 +90,13 @@ Pour ne pas nous égarer dans les explications, les diagramme sera expliqué dan
 On peut alors voir 4 étapes :
 
 \begin{enumerate}
-	\item Une étape de connexion de l'utilisateur au bastion avec ses accès primaires (qui aboutit ou pas selon la légitimité de l'utilisateur)
-	\item Une étape de connexion de l'utilisateur à le ressource cible avec des accès secondaires fournis par le bastion (via le coffre-fort)
+	\item Une étape de connexion de l'utilisateur au \gls{bastion} avec ses accès primaires (qui aboutit ou pas selon la légitimité de l'utilisateur)
+	\item Une étape de connexion de l'utilisateur à le ressource cible avec des accès secondaires fournis par le \gls{bastion} (via le coffre-fort)
 	\item Une étape d'actions sur le ressource cible
 	\item Une dernière étape de déconnexion
 \end{enumerate}
 
-Durant toute ces étapes, des logs sont envoyés par le bastion, afin de conserver toutes les traces des actions effectuées par l'utilisateur. On peut alors clairement faire la différence avec la présence d'une solution de \gls{pam} :
+Durant toute ces étapes, des logs sont envoyés par le \gls{bastion}, afin de conserver toutes les traces des actions effectuées par l'utilisateur. On peut alors clairement faire la différence avec la présence d'une solution de \gls{pam} :
 
 \begin{itemize}
 	\item Les utilisateurs sont suivis individuellement

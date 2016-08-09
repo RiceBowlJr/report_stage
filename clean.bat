@@ -1,2 +1,2 @@
 del build\*~ build\*.backup build\*.aux build\*.toc build\*.blg build\*.log build\*.out build\*.bbl build\*.dvi build\*.nav build\*.pyg build\*.snm build\*.lof
-del *~ *.backup *.aux *.toc *.blg *.log *.out *.bbl *.dvi *.nav *.pyg *.snm *.lof
+rem del *~ *.backup *.aux *.toc *.blg *.log *.out *.bbl *.dvi *.nav *.pyg *.snm *.lof

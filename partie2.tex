@@ -108,14 +108,51 @@ Nous avions fait, au terme de la phase de recherche, une sélection de 3 potenti
 Nous étions déjà en contact avec \emph{Wallix}, car partenaires et mon tuteur était en train de passer une formation avec eux, pour la solution en question. Nous avons donc pu avoir facilement une installation de leur solution. En revanche, étant partenaire de \emph{Wallix}, \emph{CyberArk} a refusé de nous fournir une version d'évaluation tant que nous n'abandonnions pas notre partenariat, afin qu'il devienne notre partenaire exclusif. Ce choix de \emph{CyberArk} venant du fait que \emph{Wallix} est leur plus gros concurrent en France, car \emph{Wallix} est une entreprise Française et que beaucoup d'entreprises jouent le jeu de faire fonctionner une entreprise locale\footnote{Information fournie par le troisième éditeur, \emph{Thycotic} durant des échanges de mails.}. Nous avons donc déclineé la solution de \emph{CyberArk} et sommes entrés en contact avec \emph{Thycotic}, avec qui nous n'avons pas eu de soucis et qui nous ont offert un suivi remarquable (une communication omniprésente à toutes les étapes de test).
 
 \subsubsection{Déploiement : Wallix AdminBastion}
-\label{par:wallix}
+\label{par:depwallix}
 
-La version d'essai de \emph{Wallix AdminBastion} se présente sous forme d'une machine virtuelle (fichier \texttt{vmdk}\footnote{VMWare Virtual Disk : format de disque virtuel créé par \emph{VMWare}}).\\
+La version d'essai de \emph{Wallix AdminBastion} se présente sous forme d'une machine virtuelle (fichier \texttt{vmdk}\footnote{VMWare Virtual Disk : format de disque virtuel créé par \emph{VMWare}}). L'hyperviseur\footnote{Plate-forme de virtualisation permettant de faire fonctionner plusieurs systèmes d'exploitation (dits virtualisés) sur une même machine physique.} hébergé sur le serveur local étant \emph{VMWare ESXi}, \\
 Cette machine virtuelle est un Debian 8 personnalisé par Wallix, avec leur propre configuration d'usine. Elle doit utiliser une base de données \emph{MySQL} externe afin de stocker ses données (logs et accréditations). Nous avons donc créé une base de données sur le serveur \emph{MySQL} présent sur la machine Windows Server 2012 R2. On avait donc l'architecture présentée sur la \textsc{Figure} \ref{fig:archi_reelle}
 
 \begin{figure}[!ht]
     \center
-    \includegraphics[width=\textwidth]{./images/PoC_archi_reelle.png}
+    \includegraphics[width=0.7\textwidth]{./images/PoC_archi_reelle.png}
     \label{fig:archi_reelle}
     \caption{Architecture mise à l'échelle des ressources disponibles chez \textsc{Synetis}}
 \end{figure}
+
+Nous avons, suite à l'installation de la solution et à se configuration, pu tirer des points techniques important sur son fonctionnement. Le produit présente deux différentes interfaces, l'une étant hébergée sur le moteur même de la solution, que l'on appellera WAB et qui correspond au \gls{bastion}, l'autre étant beaucoup plus axée sur le design que l'on appellera WABAM\footnote{Wallix AdminBastion Administration Manager}, qui elle est hébergée sur un serveur parallèle, les utilisateurs de comptes à privilèges se connectent sur cette interface.\\
+
+\paragraph{WAB}
+Le WAB est le moteur central de gestion des connexions entre les ressources et les utilisateurs. C'est à partir de cette interface que sont gérés (ajout/suppression/modification) les utilisateurs de comptes à privilèges. Le principe de fonctionnement du WAB peut être décomposé en 4 parties :
+\begin{enumerate}
+	\item Les comptes utilisateurs, ils peuvent être locaux ou directement importés d'un annuaire LDAP, ce que nous avons fait pour le PoC, avec notre domaine Active Directory.
+	\item Les ressources, qui fournissent des informations sur la localisation (adresse IP ou FQDN\footnote{Fully Qualified Domain Name : nom de domaine complet permettant de cibler une machine ou un équipement}) de cette dernière.
+	\item Les comptes de ressource, avec les mots de passe qui peuvent être modifiés automatiquement grâce à une extension native ou programmable manuellement, qui sont les comptes des ressources précédemment citées.
+	\item Les autorisations, qui font le lien entre les utilisateurs et les ressources (via leurs compte de ressource).
+\end{enumerate}
+
+\paragraph{WABAM}
+Le WABAM est simplement une interface web qui récupère les informations que lui fourni le WAB. C'est une interface complètement personnalisable, sur laquelle se connectent les utilisateurs finaux. C'est une interface beaucoup plus élégante destinée aux utilisateurs finaux, qui est en fait une vitrine du WAB. Elle embarque des extensions permettant d'ouvrir une connexion RDP, SSH ou tout autre connexion disponible avec le WAB directement dans le navigateur web. Nous ne nous intéresserons pas plus à cette interface qui n'a pas beaucoup de valeur autre que son design et la séparation de l'administration des utilisateurs finaux.
+
+\subsubsection{Test : Wallix AdminBastion}
+\label{par:testwallix}
+
+Une série de tests fonctionnels ont été effectués, des scénarios d'utilisation ont été joués : des connexions d'utilisateurs à des ressources, de toute origines possibles et sur un maximum de ressources disponibles (soit du RDP sur Windows, du SSH sur une machine Linux et une application sur un serveur TSE). Tout ces tests fonctionnels se sont relevés concluants.\\
+Par la suite, nous avons recherché des points de faiblesse qui permettraient de mettre la solution en porte-à-faux. Certains points ont été trouvés, mais ces points nécessitent un non-respect des conseils de sécurité proposés par Wallix. Les points de faiblesse sont les suivants :
+\begin{itemize}
+	\item Single Point Of Failure\footnote{SPOF : point unique de défaillance, c'est un point unique dont tout le système d'information est dépendant.} : toutes les connexions passent par le WAB, on peut donc imaginer une attaque de type DDoS\footnote{Distributed Denial of Service : déni de service réparti (ou distribué), est une déni de service entraîné par une énorme masse d'information créant une congestion (le célèbre \texttt{ping flood} lancé depuis plusieurs machines est un DDoS).} bloquant le fonctionnement du WAB. Cependant, Wallix conseille d'éviter de mettre en place un système de haute disponibilité (deux machines WAB en parallèle qui traitent les requêtes), mais de plutôt monter un plan de reprise d'activité, qui consiste à conserver un serveur clone inactif en parallèle du premier, qui prendrait le relais en cas de panne et/ou attaque de ce type. Il reste aussi difficile de tenir une telle attaque dans la durée compte tenu de la quantité de ressources nécessaires. Enfin, le WAB ne devant être autorisé de l'extérieur du réseau (pour des prestataires par exemple) que depuis des adresses IP spécifiques, cette nécessité de ressources pour monter une attaque est encore moins atteignable.
+	\item Contournement des routes : nous avons imaginé qu'un utilisateur modifie manuellement sa table de routage pour accéder directement aux ressources. Cependant, cette action nécessite deux prérequis :
+	\begin{enumerate}
+		\item Les ressources sont dans le même sous-réseau que les utilisateurs, ce qui est une très mauvaise pratique en terme de sécurité, car il est important de cloisonner les différents types de machines (serveurs/utilisateurs).
+		\item Les mots de passe ne sont pas géré automatiquement par le WAB, mais par des administrateurs, ce qui est totalement à l'opposé du but de l'utilisation d'une solution de PAM.
+	\end{enumerate}
+	\item Le vol d'une session d'un utilisateur, s'il part par exemple en pause et oublie de bloquer sa session. Mais cette faille est une faille humaine à laquelle on ne peut pallie uniquement en sensibilisant le personnel.
+\end{itemize}
+
+\subsubsection{Déploiement : Thycotic Secret Server}
+\label{par:depss}
+
+
+
+\subsubsection{Test : Thycotic Secret Server}
+\label{par:testss}

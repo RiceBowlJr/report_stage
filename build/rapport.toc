@@ -27,12 +27,20 @@
 \contentsline {subsubsection}{\numberline {2.3.1}Architecture}{16}{subsubsection.2.3.1}
 \contentsline {subsubsection}{\numberline {2.3.2}Choix des solutions de \gls {pam} \IeC {\`a} tester}{18}{subsubsection.2.3.2}
 \contentsline {subsubsection}{\numberline {2.3.3}D\IeC {\'e}ploiement : Wallix AdminBastion}{19}{subsubsection.2.3.3}
-\contentsline {section}{\numberline {3}R\IeC {\'e}sultats et discussion}{20}{section.3}
-\contentsline {section}{Conclusion}{21}{section*.6}
-\contentsline {section}{R\IeC {\'e}f\IeC {\'e}rences}{22}{section*.7}
-\contentsline {section}{Annexe A}{23}{section*.9}
-\contentsline {subsection}{\numberline {1.1}Fonctionnement d\IeC {\'e}taill\IeC {\'e} des solutions de \gls {pam}}{23}{subsection.1.1}
-\contentsline {subsubsection}{\numberline {1.1.1}Sans solution de \gls {pam}}{23}{subsubsection.1.1.1}
-\contentsline {subsubsection}{\numberline {1.1.2}Avec solution de \gls {pam}}{24}{subsubsection.1.1.2}
-\contentsline {paragraph}{R\IeC {\'e}sum\IeC {\'e}}{28}{section*.10}
-\contentsline {paragraph}{Abstract}{29}{section*.11}
+\contentsline {paragraph}{WAB}{20}{section*.6}
+\contentsline {paragraph}{WABAM}{21}{section*.7}
+\contentsline {subsubsection}{\numberline {2.3.4}Test : Wallix AdminBastion}{21}{subsubsection.2.3.4}
+\contentsline {subsubsection}{\numberline {2.3.5}D\IeC {\'e}ploiement : Thycotic Secret Server}{22}{subsubsection.2.3.5}
+\contentsline {subsubsection}{\numberline {2.3.6}Test : Thycotic Secret Server}{22}{subsubsection.2.3.6}
+\contentsline {section}{\numberline {3}R\IeC {\'e}sultats et discussion}{23}{section.3}
+\contentsline {subsection}{\numberline {3.1}Des solutions adapt\IeC {\'e}es \IeC {\`a} la taille des infrastructures}{23}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}L'avenir dans le cloud}{23}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}CamStudio 2.7.4 : exp\IeC {\'e}rience personnelle d'attaque par escalade de privil\IeC {\`e}ges}{23}{subsection.3.3}
+\contentsline {section}{Conclusion}{24}{section*.8}
+\contentsline {section}{R\IeC {\'e}f\IeC {\'e}rences}{25}{section*.9}
+\contentsline {section}{Annexe A}{26}{section*.11}
+\contentsline {subsection}{\numberline {1.4}Fonctionnement d\IeC {\'e}taill\IeC {\'e} des solutions de \gls {pam}}{26}{subsection.1.4}
+\contentsline {subsubsection}{\numberline {1.4.1}Sans solution de \gls {pam}}{26}{subsubsection.1.4.1}
+\contentsline {subsubsection}{\numberline {1.4.2}Avec solution de \gls {pam}}{27}{subsubsection.1.4.2}
+\contentsline {paragraph}{R\IeC {\'e}sum\IeC {\'e}}{31}{section*.12}
+\contentsline {paragraph}{Abstract}{32}{section*.13}
