@@ -88,3 +88,33 @@ parent={},%
 %
 }%
 }%
+\ifglsentryexists{stratch}{}%
+{%
+\gls@defglossaryentry{stratch}%
+{%
+name={from stratch},%
+sort={from stratch},%
+type={main},%
+first={from stratch},%
+firstplural={from stratchs},%
+text={from stratch},%
+plural={from stratchs},%
+description={démarrer un projet depuis rien, à partir de zéro},%
+descriptionplural={démarrer un projet depuis rien, à partir de zéro},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%

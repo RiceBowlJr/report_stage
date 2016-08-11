@@ -1,6 +1,6 @@
 # Mémoire de stage de fin d'études
 
-__Edit : ~~Important : toujours nettoyer les répertoires avant de commiter et de pousser les sources.~~ se fait automatiquement avec les nouveaux scripts sur Windaube, vous pouvez vous boire une bière avec le temps de gagné.__
+__Edit : ~~Important : toujours nettoyer les répertoires avant de commiter et de pousser les sources.~~ Si vous avez une connexion de merde surtout.__
 
 Ce document est mon mémoire de stage de fin d'études. Les informations suivantes permettent d'installer le compilateur LaTeX sous Linux/UNIX et compiler les sources du document.
 
@@ -26,6 +26,8 @@ __Près-requis :__ vérifier et le cas échéant, donner les droits d'exécution
 Sous Windows :
 
 `C:\Mon_chemin_windowbe> make.bat`
+
+Pour compiler le glossaire, compiler le tex une première fois, puis `makeglossaries rapport` dans le répertoire contenant le fichier `rapport.aux`, les fichiers de compil somme toute. Perl est nécessaire pour le glossaire.
 
 ## Nettoyage des fichiers de compilation
 

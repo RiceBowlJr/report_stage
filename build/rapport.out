@@ -30,12 +30,16 @@
 \BOOKMARK [3][-]{subsubsection.2.3.5}{D\351ploiement : Thycotic Secret Server}{subsection.2.3}% 30
 \BOOKMARK [3][-]{subsubsection.2.3.6}{Test : Thycotic Secret Server}{subsection.2.3}% 31
 \BOOKMARK [1][-]{section.3}{R\351sultats et discussion}{}% 32
-\BOOKMARK [2][-]{subsection.3.1}{Des solutions adapt\351es \340 la taille des infrastructures}{section.3}% 33
+\BOOKMARK [2][-]{subsection.3.1}{Des solutions se d\351marquant par des sp\351cificit\351s}{section.3}% 33
 \BOOKMARK [2][-]{subsection.3.2}{L'avenir dans le cloud}{section.3}% 34
-\BOOKMARK [2][-]{subsection.3.3}{CamStudio 2.7.4 : exp\351rience personnelle d'attaque par escalade de privil\350ges}{section.3}% 35
-\BOOKMARK [1][-]{section*.8}{Conclusion}{}% 36
-\BOOKMARK [1][-]{section*.9}{R\351f\351rences}{}% 37
-\BOOKMARK [1][-]{section*.11}{Annexe A}{}% 38
-\BOOKMARK [2][-]{subsection.1.4}{Fonctionnement d\351taill\351 des solutions de pam}{section*.11}% 39
-\BOOKMARK [3][-]{subsubsection.1.4.1}{Sans solution de pam}{subsection.1.4}% 40
-\BOOKMARK [3][-]{subsubsection.1.4.2}{Avec solution de pam}{subsection.1.4}% 41
+\BOOKMARK [2][-]{subsection.3.3}{Une synergie entre solution de PAM et une f\351d\351ration d'identit\351}{section.3}% 35
+\BOOKMARK [2][-]{subsection.3.4}{CamStudio 2.7.4 : exp\351rience personnelle d'attaque par escalade de privil\350ges}{section.3}% 36
+\BOOKMARK [2][-]{subsection.3.5}{Les bonnes pratiques \340 int\351grer}{section.3}% 37
+\BOOKMARK [3][-]{subsubsection.3.5.1}{Renforcer l'authentification}{subsection.3.5}% 38
+\BOOKMARK [3][-]{subsubsection.3.5.2}{Minimiser les acc\350s privil\351gi\351s}{subsection.3.5}% 39
+\BOOKMARK [1][-]{section*.8}{Conclusion}{}% 40
+\BOOKMARK [1][-]{section*.9}{R\351f\351rences}{}% 41
+\BOOKMARK [1][-]{section*.11}{Annexe A}{}% 42
+\BOOKMARK [2][-]{subsection.1.6}{Fonctionnement d\351taill\351 des solutions de pam}{section*.11}% 43
+\BOOKMARK [3][-]{subsubsection.1.6.1}{Sans solution de pam}{subsection.1.6}% 44
+\BOOKMARK [3][-]{subsubsection.1.6.2}{Avec solution de pam}{subsection.1.6}% 45
