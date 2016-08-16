@@ -37,14 +37,14 @@
 \contentsline {subsection}{\numberline {3.2}L'avenir dans le cloud}{24}{subsection.3.2}
 \contentsline {subsection}{\numberline {3.3}Une synergie entre solution de PAM et une f\IeC {\'e}d\IeC {\'e}ration d'identit\IeC {\'e}}{24}{subsection.3.3}
 \contentsline {subsection}{\numberline {3.4}CamStudio 2.7.4 : exp\IeC {\'e}rience personnelle d'attaque par escalade de privil\IeC {\`e}ges}{24}{subsection.3.4}
-\contentsline {subsection}{\numberline {3.5}Les bonnes pratiques \IeC {\`a} int\IeC {\'e}grer}{24}{subsection.3.5}
-\contentsline {subsubsection}{\numberline {3.5.1}Renforcer l'authentification}{24}{subsubsection.3.5.1}
-\contentsline {subsubsection}{\numberline {3.5.2}Minimiser les acc\IeC {\`e}s privil\IeC {\'e}gi\IeC {\'e}s}{25}{subsubsection.3.5.2}
-\contentsline {section}{Conclusion}{26}{section*.8}
-\contentsline {section}{R\IeC {\'e}f\IeC {\'e}rences}{27}{section*.9}
-\contentsline {section}{Annexe A}{28}{section*.11}
-\contentsline {subsection}{\numberline {1.6}Fonctionnement d\IeC {\'e}taill\IeC {\'e} des solutions de \gls {pam}}{28}{subsection.1.6}
-\contentsline {subsubsection}{\numberline {1.6.1}Sans solution de \gls {pam}}{28}{subsubsection.1.6.1}
-\contentsline {subsubsection}{\numberline {1.6.2}Avec solution de \gls {pam}}{29}{subsubsection.1.6.2}
-\contentsline {paragraph}{R\IeC {\'e}sum\IeC {\'e}}{33}{section*.12}
-\contentsline {paragraph}{Abstract}{34}{section*.13}
+\contentsline {subsection}{\numberline {3.5}Les bonnes pratiques \IeC {\`a} int\IeC {\'e}grer}{25}{subsection.3.5}
+\contentsline {subsubsection}{\numberline {3.5.1}Renforcer l'authentification}{25}{subsubsection.3.5.1}
+\contentsline {subsubsection}{\numberline {3.5.2}Minimiser les acc\IeC {\`e}s privil\IeC {\'e}gi\IeC {\'e}s}{26}{subsubsection.3.5.2}
+\contentsline {section}{Conclusion}{27}{section*.8}
+\contentsline {section}{R\IeC {\'e}f\IeC {\'e}rences}{28}{section*.9}
+\contentsline {section}{Annexe A}{29}{section*.11}
+\contentsline {subsection}{\numberline {1.6}Fonctionnement d\IeC {\'e}taill\IeC {\'e} des solutions de \gls {pam}}{29}{subsection.1.6}
+\contentsline {subsubsection}{\numberline {1.6.1}Sans solution de \gls {pam}}{29}{subsubsection.1.6.1}
+\contentsline {subsubsection}{\numberline {1.6.2}Avec solution de \gls {pam}}{30}{subsubsection.1.6.2}
+\contentsline {paragraph}{R\IeC {\'e}sum\IeC {\'e}}{34}{section*.12}
+\contentsline {paragraph}{Abstract}{35}{section*.13}

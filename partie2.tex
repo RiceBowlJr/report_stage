@@ -15,7 +15,7 @@ Cet état de l'art devait aboutir à un document présentant le principe de gest
 
 \subsubsection{Planning prévisionnel}
 \label{planning}
-Afin d'avoir une vue d'ensemble du projet, un planning a été réalisé à partir d'un découpage journalier des tâches à effectuer. Ce planning a permis d'avoir une vue marcoscopique du stage, et de répartir le travail sur la durée du stage, pour éviter d'avoir un retard qui pourrait surprendre à quelques semaines de la date buttoir. Ce découpage a aussi permis d'avoir des étapes, et de savoir à n'importe quel moment si j'avais de l'avance, ou surtout du retard, chose à proscrire pour arriver à un résultat convenable.\\
+Afin d'avoir une vue d'ensemble du projet, un planning a été réalisé à partir d'un découpage journalier des tâches à effectuer. Ce planning a permis d'avoir une vue macroscopique du stage, et de répartir le travail sur la durée du stage, pour éviter d'avoir un retard qui pourrait surprendre à quelques semaines de la date buttoir. Ce découpage a aussi permis d'avoir des étapes, et de savoir à n'importe quel moment si j'avais de l'avance, ou surtout du retard, chose à proscrire pour arriver à un résultat convenable.\\
 \begin{figure}[!ht]
     \center
     \includegraphics[width=\textwidth]{./images/calendrier_previsionnel.png}
@@ -144,7 +144,7 @@ Par la suite, nous avons recherché des points de faiblesse qui permettraient de
 	\item Contournement des routes : nous avons imaginé qu'un utilisateur modifie manuellement sa table de routage pour accéder directement aux ressources. Cependant, cette action nécessite deux prérequis :
 	\begin{enumerate}
 		\item Les ressources sont dans le même sous-réseau que les utilisateurs, ce qui est une très mauvaise pratique en terme de sécurité, car il est important de cloisonner les différents types de machines (serveurs/utilisateurs).
-		\item Les mots de passe ne sont pas géré automatiquement par le WAB, mais par des administrateurs, ce qui est totalement à l'opposé du but de l'utilisation d'une solution de PAM.
+		\item Les mots de passe ne sont pas gérés automatiquement par le WAB, mais par des administrateurs, ce qui est totalement à l'opposé du but de l'utilisation d'une solution de PAM.
 	\end{enumerate}
 	\item Le vol d'une session d'un utilisateur, s'il part par exemple en pause et oublie de bloquer sa session. Mais cette faille est une faille humaine à laquelle on ne peut pallier uniquement en sensibilisant le personnel.
 \end{itemize}
@@ -152,7 +152,9 @@ Par la suite, nous avons recherché des points de faiblesse qui permettraient de
 \subsubsection{Déploiement : Thycotic Secret Server}
 \label{par:depss}
 
-
+Encore une fois, l'architecture de l'infrastructure de test a été limitée par les ressources internes. La solution de \gls{pam} a dû être déployé sur le contrôleur de domaine Active Directory, ce qui n'est pas conseillé, car Windows Server gère très mal le cohabitation avec le rôle contrôleur de domaine et le rôle Internet Information Services (IIS).\\
+La première tentative d'installation fut infructueuse, sûrement à cause de la machine qui avait déjà été utilisée pour un projet portant sur une autre problématique. Toute l'installation s'est bien déroulée (installation des rôles et sur SQL Server), mais une fois l'installation terminée, il était impossible de joindre le serveur "Secret Server" dans les pools d'application IIS (piscine d'applications). Le problème ne pouvant être résolu, même avec l'aide du support Thycotic, nous avons décider de repartir de zéro et de formater notre serveur, pour y ré-installer un serveur neuf, sans possible paramétrage générant des erreurs.\\
+Cette seconde installation posa juste un soucis avec l'attribution des droits d'exécution, ne fonctionnant pas avec un compte de service\footnote{A partir de Windows Server 2008 R2, Microsoft à mis en place les MSA (Managed Service Account) afin de déléguer la gestion d'un compte de service à un domaine Active Directory. Ces compte n'ont pas de mot de passe attribué par un administrateur, mais ils sont tout simplement assigné à des machines qui ont le droit de récupérer ce mot de passe d'accès auprès du contrôleur de domaine. Ainsi il peut être modifié régulièrement sans affecter l'utilisation.}. Ce problème était sûrement dû à la cohabitation des rôles de contrôleur de domaine en même temps que le rôle IIS.
 
 \subsubsection{Test : Thycotic Secret Server}
 \label{par:testss}
