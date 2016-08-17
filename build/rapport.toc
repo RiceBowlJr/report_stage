@@ -31,20 +31,20 @@
 \contentsline {paragraph}{WABAM}{21}{section*.7}
 \contentsline {subsubsection}{\numberline {2.3.4}Test : Wallix AdminBastion}{21}{subsubsection.2.3.4}
 \contentsline {subsubsection}{\numberline {2.3.5}D\IeC {\'e}ploiement : Thycotic Secret Server}{22}{subsubsection.2.3.5}
-\contentsline {subsubsection}{\numberline {2.3.6}Test : Thycotic Secret Server}{22}{subsubsection.2.3.6}
-\contentsline {section}{\numberline {3}R\IeC {\'e}sultats et discussion}{23}{section.3}
-\contentsline {subsection}{\numberline {3.1}Des solutions se d\IeC {\'e}marquant par des sp\IeC {\'e}cificit\IeC {\'e}s}{23}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}L'avenir dans le cloud}{24}{subsection.3.2}
-\contentsline {subsection}{\numberline {3.3}Une synergie entre solution de PAM et une f\IeC {\'e}d\IeC {\'e}ration d'identit\IeC {\'e}}{24}{subsection.3.3}
-\contentsline {subsection}{\numberline {3.4}CamStudio 2.7.4 : exp\IeC {\'e}rience personnelle d'attaque par escalade de privil\IeC {\`e}ges}{24}{subsection.3.4}
-\contentsline {subsection}{\numberline {3.5}Les bonnes pratiques \IeC {\`a} int\IeC {\'e}grer}{25}{subsection.3.5}
-\contentsline {subsubsection}{\numberline {3.5.1}Renforcer l'authentification}{25}{subsubsection.3.5.1}
-\contentsline {subsubsection}{\numberline {3.5.2}Minimiser les acc\IeC {\`e}s privil\IeC {\'e}gi\IeC {\'e}s}{26}{subsubsection.3.5.2}
-\contentsline {section}{Conclusion}{27}{section*.8}
-\contentsline {section}{R\IeC {\'e}f\IeC {\'e}rences}{28}{section*.9}
-\contentsline {section}{Annexe A}{29}{section*.11}
-\contentsline {subsection}{\numberline {1.6}Fonctionnement d\IeC {\'e}taill\IeC {\'e} des solutions de \gls {pam}}{29}{subsection.1.6}
-\contentsline {subsubsection}{\numberline {1.6.1}Sans solution de \gls {pam}}{29}{subsubsection.1.6.1}
-\contentsline {subsubsection}{\numberline {1.6.2}Avec solution de \gls {pam}}{30}{subsubsection.1.6.2}
-\contentsline {paragraph}{R\IeC {\'e}sum\IeC {\'e}}{34}{section*.12}
-\contentsline {paragraph}{Abstract}{35}{section*.13}
+\contentsline {subsubsection}{\numberline {2.3.6}Test : Thycotic Secret Server}{23}{subsubsection.2.3.6}
+\contentsline {section}{\numberline {3}R\IeC {\'e}sultats et discussion}{24}{section.3}
+\contentsline {subsection}{\numberline {3.1}Des solutions se d\IeC {\'e}marquant par des sp\IeC {\'e}cificit\IeC {\'e}s}{24}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}L'avenir dans le cloud}{25}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Une synergie entre solution de PAM et une f\IeC {\'e}d\IeC {\'e}ration d'identit\IeC {\'e}}{25}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}CamStudio 2.7.4 : exp\IeC {\'e}rience personnelle d'attaque par escalade de privil\IeC {\`e}ges}{25}{subsection.3.4}
+\contentsline {subsection}{\numberline {3.5}Les bonnes pratiques \IeC {\`a} int\IeC {\'e}grer}{26}{subsection.3.5}
+\contentsline {subsubsection}{\numberline {3.5.1}Renforcer l'authentification}{26}{subsubsection.3.5.1}
+\contentsline {subsubsection}{\numberline {3.5.2}Minimiser les acc\IeC {\`e}s privil\IeC {\'e}gi\IeC {\'e}s}{27}{subsubsection.3.5.2}
+\contentsline {section}{Conclusion}{28}{section*.8}
+\contentsline {section}{R\IeC {\'e}f\IeC {\'e}rences}{29}{section*.9}
+\contentsline {section}{Annexe A}{30}{section*.11}
+\contentsline {subsection}{\numberline {1.6}Fonctionnement d\IeC {\'e}taill\IeC {\'e} des solutions de \gls {pam}}{30}{subsection.1.6}
+\contentsline {subsubsection}{\numberline {1.6.1}Sans solution de \gls {pam}}{30}{subsubsection.1.6.1}
+\contentsline {subsubsection}{\numberline {1.6.2}Avec solution de \gls {pam}}{31}{subsubsection.1.6.2}
+\contentsline {paragraph}{R\IeC {\'e}sum\IeC {\'e}}{35}{section*.12}
+\contentsline {paragraph}{Abstract}{36}{section*.13}
