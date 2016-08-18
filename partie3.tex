@@ -14,10 +14,13 @@ Il faut aussi ajouter à cela que l'ensemble de la sécurité de \emph{Secret Se
 \subsection{L'avenir dans le cloud}
 \label{subsec:avenircloud}
 
+Selon l'étude de Gartner\cite{gar}, les besoins de solution de \gls{pam} dans le cloud représentent seulement 3\% des parts de marché, pour selon leur estimation, 30\% en 2019. Ces chiffres en sont pas surprenants compte tenu de l'évolution des infrastructures décentralisées, comme le proposent les grands éditeurs comme Microsoft avec la suite \emph{365}, le géant du net Google avec son \emph{Google Enterprise}, Amazon avec l'ensemble de ses solutions qui vont du stockage de données (\emph{Amazon EC2}) au cluster de calcul (\emph{Amazon S3}).\\
+Il est important de noter que cette gestion des comptes à privilèges dans le cloud représente un certain défis, sachant que ces infrastructures ne sont pas maintenues par les entreprises concernées (client final) mais par ces grands éditeurs. On peut alors se poser des questions sur la responsabilité des comptes à privilèges : relève-t-elle du client ou de l'éditeur ?
+
 \subsection{Une synergie entre solution de PAM et une fédération d'identité}
 \label{subsec:syner}
 
-Exemple fédé : Ping Identity https://www.pingidentity.com/fr.html
+Un des leaders du marché des solutions de \gls{pam}, \emph{Centrify} (voir l'étude de marché menée par \textsc{Cser} \cite{acs} pour plus d'informations), propose un produit apportant une synergie entre la gestion des comptes à privilèges et la fédération d'identité\footnote{Gestion des accès et supervision des utilisateurs communs, par exemple la gestion des comptes des étudiants à l'université.}. En effet, il semble logique d'intégrer une solution de gestion des comptes à privilèges avec une solution de fédération d'identités, la gestion des utilisateurs en sera facilitée, et l’homogénéité du système offrira une assurance de qualité de service. Cependant, \emph{Centrify} est pour le moment le seul à proposer une telle solution, avec Microsoft et sa solution MIM (Microsoft Identity Manager) qui inclut l'extension PIM (Privileged Identity Manager) gérant les comptes à privilèges avec des groupes Active Directory de sécurité à usage limité dans le temps (\emph{shadow group}, voir l'article de \textsc{Microsoft Technet} \cite{mic} pour pus d'informations).
 
 \subsection{CamStudio 2.7.4 : expérience personnelle d'attaque par escalade de privilèges}
 \label{subsec:camstudio}

@@ -21,7 +21,7 @@
 \contentsline {subsubsection}{\numberline {2.1.1}Analyse des besoins}{13}{subsubsection.2.1.1}
 \contentsline {subsubsection}{\numberline {2.1.2}Planning pr\IeC {\'e}visionnel}{14}{subsubsection.2.1.2}
 \contentsline {subsection}{\numberline {2.2}Recherche}{14}{subsection.2.2}
-\contentsline {subsubsection}{\numberline {2.2.1}Recherche du fonctionnement des solutions}{15}{subsubsection.2.2.1}
+\contentsline {subsubsection}{\numberline {2.2.1}Recherche du fonctionnement des solutions}{14}{subsubsection.2.2.1}
 \contentsline {subsubsection}{\numberline {2.2.2}Recherche des solutions existantes sur le march\IeC {\'e}}{15}{subsubsection.2.2.2}
 \contentsline {subsection}{\numberline {2.3}Proof of Concept}{16}{subsection.2.3}
 \contentsline {subsubsection}{\numberline {2.3.1}Architecture}{16}{subsubsection.2.3.1}
@@ -38,13 +38,13 @@
 \contentsline {subsection}{\numberline {3.3}Une synergie entre solution de PAM et une f\IeC {\'e}d\IeC {\'e}ration d'identit\IeC {\'e}}{25}{subsection.3.3}
 \contentsline {subsection}{\numberline {3.4}CamStudio 2.7.4 : exp\IeC {\'e}rience personnelle d'attaque par escalade de privil\IeC {\`e}ges}{25}{subsection.3.4}
 \contentsline {subsection}{\numberline {3.5}Les bonnes pratiques \IeC {\`a} int\IeC {\'e}grer}{26}{subsection.3.5}
-\contentsline {subsubsection}{\numberline {3.5.1}Renforcer l'authentification}{26}{subsubsection.3.5.1}
+\contentsline {subsubsection}{\numberline {3.5.1}Renforcer l'authentification}{27}{subsubsection.3.5.1}
 \contentsline {subsubsection}{\numberline {3.5.2}Minimiser les acc\IeC {\`e}s privil\IeC {\'e}gi\IeC {\'e}s}{27}{subsubsection.3.5.2}
-\contentsline {section}{Conclusion}{28}{section*.8}
-\contentsline {section}{R\IeC {\'e}f\IeC {\'e}rences}{29}{section*.9}
-\contentsline {section}{Annexe A}{30}{section*.11}
-\contentsline {subsection}{\numberline {1.6}Fonctionnement d\IeC {\'e}taill\IeC {\'e} des solutions de \gls {pam}}{30}{subsection.1.6}
-\contentsline {subsubsection}{\numberline {1.6.1}Sans solution de \gls {pam}}{30}{subsubsection.1.6.1}
-\contentsline {subsubsection}{\numberline {1.6.2}Avec solution de \gls {pam}}{31}{subsubsection.1.6.2}
-\contentsline {paragraph}{R\IeC {\'e}sum\IeC {\'e}}{35}{section*.12}
-\contentsline {paragraph}{Abstract}{36}{section*.13}
+\contentsline {section}{Conclusion}{29}{section*.8}
+\contentsline {section}{R\IeC {\'e}f\IeC {\'e}rences}{30}{section*.9}
+\contentsline {section}{Annexe A}{31}{section*.11}
+\contentsline {subsection}{\numberline {1.6}Fonctionnement d\IeC {\'e}taill\IeC {\'e} des solutions de \gls {pam}}{31}{subsection.1.6}
+\contentsline {subsubsection}{\numberline {1.6.1}Sans solution de \gls {pam}}{31}{subsubsection.1.6.1}
+\contentsline {subsubsection}{\numberline {1.6.2}Avec solution de \gls {pam}}{32}{subsubsection.1.6.2}
+\contentsline {paragraph}{R\IeC {\'e}sum\IeC {\'e}}{36}{section*.12}
+\contentsline {paragraph}{Abstract}{37}{section*.13}

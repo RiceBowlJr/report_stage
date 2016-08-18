@@ -22,7 +22,7 @@ Afin d'avoir une vue d'ensemble du projet, un planning a été réalisé à part
     \caption{Calendrier prévisionnel}
 \end{figure}
 
-Bien sûr, le calendrier est une estimation et la réalité s'est avérée différente, ce point est abordé en section \ref{sec:resultats}. : la durée de recherche sur la gestion de comptes à privilèges et sur les différentes solutions a pris presque 2 fois plus de temps que prévu, tout comme le déploiement des solutions et le test de ces dernières. Cependant, le calendrier prévisionnel étant vu avec une large marge d'erreur, le stage tout de même pu être complété dans la durée impartie.
+Bien sûr, le calendrier est une estimation et la réalité s'est avérée différente : la durée de recherche sur la gestion de comptes à privilèges et sur les différentes solutions a pris presque 2 fois plus de temps que prévu, tout comme le déploiement des solutions et le test de ces dernières. Cependant, le calendrier prévisionnel étant vu avec une large marge d'erreur, le stage tout de même pu être complété dans la durée impartie.
 
 \subsection{Recherche}
 \label{subsec:recherche}
@@ -137,7 +137,7 @@ Le WABAM est simplement une interface web qui récupère les informations que lu
 \subsubsection{Test : Wallix AdminBastion}
 \label{par:testwallix}
 
-Une série de tests fonctionnels ont été effectués, des scénarios d'utilisation ont été joués : des connexions d'utilisateurs à des ressources, de toute origines possibles et sur un maximum de ressources disponibles (soit du RDP sur Windows, du SSH sur une machine Linux et une application sur un serveur TSE). Tout ces tests fonctionnels se sont relevés concluants.\\
+Une série de tests fonctionnels ont été effectués, des scénarios d'utilisation ont été joués : des connexions d'utilisateurs à des ressources, de toute origines possibles et sur un maximum de ressources disponibles (soit du RDP sur Windows, du SSH sur une machine Linux et une application sur un serveur TSE). Seule une anomalie a été relevée : une erreur générée lors de la synchronisation des utilisateurs avec un annuaire Active Directory, le mot de passe pour l'accès à cet annuaire ne peut pas contenir de caractères spéciaux, car l'encodage de la requête ne parvient pas à traiter lesdits caractères. Cependant, l'erreur reste minime et a été signalée au support pour une correction dans une future version.\\
 Par la suite, nous avons recherché des points de faiblesse qui permettraient de mettre la solution en porte-à-faux. Certains points ont été trouvés, mais ces points nécessitent un non-respect des conseils de sécurité proposés par Wallix. Les points de faiblesse sont les suivants :
 \begin{itemize}
 	\item Single Point Of Failure\footnote{SPOF : point unique de défaillance, c'est un point unique dont tout le système d'information est dépendant.} : toutes les connexions passent par le WAB, on peut donc imaginer une attaque de type DDoS\footnote{Distributed Denial of Service : déni de service réparti (ou distribué), est une déni de service entraîné par une énorme masse d'information créant une congestion (le célèbre \texttt{ping flood} lancé depuis plusieurs machines est un DDoS).} bloquant le fonctionnement du WAB. Cependant, Wallix conseille d'éviter de mettre en place un système de haute disponibilité (deux machines WAB en parallèle qui traitent les requêtes), mais de plutôt monter un plan de reprise d'activité, qui consiste à conserver un serveur clone inactif en parallèle du premier, qui prendrait le relais en cas de panne et/ou attaque de ce type. Il reste aussi difficile de tenir une telle attaque dans la durée compte tenu de la quantité de ressources nécessaires. Enfin, le WAB ne devant être autorisé de l'extérieur du réseau (pour des prestataires par exemple) que depuis des adresses IP spécifiques, cette nécessité de ressources pour monter une attaque est encore moins atteignable.
@@ -160,3 +160,6 @@ Cependant, toutes ces configurations sont laborieuses à mettre en place, surtou
 
 \subsubsection{Test : Thycotic Secret Server}
 \label{par:testss}
+
+Les tests effectués sur Thycotic Secret Server se sont limités aux tests fonctionnels, qui ont été concluants (lancement d'une session SSH et RDP, visualisation des sessions enregistrées, limitation d'accès, etc). Le gros point négatif que l'on peut noter sur cette solution est le manque d'ergonomie de l'interface : la configuration des \emph{secrets} (autorisations) est simple mais lier ces secrets aux ressources cibles et aux utilisateurs nécessite beaucoup de modifications dans l'interface d'administration, pas forcément faciles à trouver compte tenu du manque d'informations dans les manuels d'utilisateurs et des erreurs de traduction.\\
+On notera aussi le manque de liberté dans l'identification des ressources cibles : celles-ci sont gérées en masse, avec des plages d'IP ou sur des domaines entiers, mais l'on ne peut pas configurer une ressource cible individuellement.
