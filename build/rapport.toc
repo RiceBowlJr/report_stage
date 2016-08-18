@@ -1,50 +1,52 @@
 \select@language {french}
 \contentsline {section}{Remerciements}{1}{section*.1}
-\contentsline {section}{Glossaire}{4}{section*.3}
-\contentsline {section}{Introduction}{5}{section*.5}
-\contentsline {section}{\numberline {1}Probl\IeC {\'e}matique : comment pallier le manque de contr\IeC {\^o}le des comptes privil\IeC {\'e}gi\IeC {\'e}s}{7}{section.1}
-\contentsline {subsection}{\numberline {1.1}Contexte}{7}{subsection.1.1}
-\contentsline {subsubsection}{\numberline {1.1.1}Les comptes \IeC {\`a} privil\IeC {\`e}ges}{7}{subsubsection.1.1.1}
-\contentsline {subsubsection}{\numberline {1.1.2}La gestion de comptes \IeC {\`a} privil\IeC {\`e}ges}{8}{subsubsection.1.1.2}
-\contentsline {subsection}{\numberline {1.2}Un point clef de la s\IeC {\'e}curit\IeC {\'e} des syst\IeC {\`e}mes d'information}{9}{subsection.1.2}
-\contentsline {subsubsection}{\numberline {1.2.1}Une cible de choix pour les pirates}{9}{subsubsection.1.2.1}
-\contentsline {subsubsection}{\numberline {1.2.2}Un manque de visibilit\IeC {\'e} d'actions}{9}{subsubsection.1.2.2}
-\contentsline {subsection}{\numberline {1.3}Objectifs d'un syst\IeC {\`e}me de \gls {pam}}{10}{subsection.1.3}
-\contentsline {subsection}{\numberline {1.4}Fonctionnement d'un syst\IeC {\`e}me de gestion de comptes \IeC {\`a} privil\IeC {\`e}ges}{10}{subsection.1.4}
-\contentsline {subsubsection}{\numberline {1.4.1}Cas g\IeC {\'e}n\IeC {\'e}ral}{10}{subsubsection.1.4.1}
-\contentsline {subsubsection}{\numberline {1.4.2}Deux types d'architecture}{11}{subsubsection.1.4.2}
-\contentsline {subsection}{\numberline {1.5}Les limitations des solutions \gls {pam}}{11}{subsection.1.5}
-\contentsline {subsubsection}{\numberline {1.5.1}Le facteur humain}{11}{subsubsection.1.5.1}
-\contentsline {subsubsection}{\numberline {1.5.2}La d\IeC {\'e}tection de comportements anormaux}{12}{subsubsection.1.5.2}
-\contentsline {section}{\numberline {2}M\IeC {\'e}thodes et moyens mis en \IeC {\oe }uvre}{13}{section.2}
-\contentsline {subsection}{\numberline {2.1}Gestion de projet}{13}{subsection.2.1}
-\contentsline {subsubsection}{\numberline {2.1.1}Analyse des besoins}{13}{subsubsection.2.1.1}
-\contentsline {subsubsection}{\numberline {2.1.2}Planning pr\IeC {\'e}visionnel}{14}{subsubsection.2.1.2}
-\contentsline {subsection}{\numberline {2.2}Recherche}{14}{subsection.2.2}
-\contentsline {subsubsection}{\numberline {2.2.1}Recherche du fonctionnement des solutions}{14}{subsubsection.2.2.1}
-\contentsline {subsubsection}{\numberline {2.2.2}Recherche des solutions existantes sur le march\IeC {\'e}}{15}{subsubsection.2.2.2}
-\contentsline {subsection}{\numberline {2.3}Proof of Concept}{16}{subsection.2.3}
-\contentsline {subsubsection}{\numberline {2.3.1}Architecture}{16}{subsubsection.2.3.1}
-\contentsline {subsubsection}{\numberline {2.3.2}Choix des solutions de \gls {pam} \IeC {\`a} tester}{18}{subsubsection.2.3.2}
-\contentsline {subsubsection}{\numberline {2.3.3}D\IeC {\'e}ploiement : Wallix AdminBastion}{19}{subsubsection.2.3.3}
-\contentsline {paragraph}{WAB}{20}{section*.6}
-\contentsline {paragraph}{WABAM}{21}{section*.7}
-\contentsline {subsubsection}{\numberline {2.3.4}Test : Wallix AdminBastion}{21}{subsubsection.2.3.4}
-\contentsline {subsubsection}{\numberline {2.3.5}D\IeC {\'e}ploiement : Thycotic Secret Server}{22}{subsubsection.2.3.5}
-\contentsline {subsubsection}{\numberline {2.3.6}Test : Thycotic Secret Server}{23}{subsubsection.2.3.6}
-\contentsline {section}{\numberline {3}R\IeC {\'e}sultats et discussion}{24}{section.3}
-\contentsline {subsection}{\numberline {3.1}Des solutions se d\IeC {\'e}marquant par des sp\IeC {\'e}cificit\IeC {\'e}s}{24}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}L'avenir dans le cloud}{25}{subsection.3.2}
-\contentsline {subsection}{\numberline {3.3}Une synergie entre solution de PAM et une f\IeC {\'e}d\IeC {\'e}ration d'identit\IeC {\'e}}{25}{subsection.3.3}
-\contentsline {subsection}{\numberline {3.4}CamStudio 2.7.4 : exp\IeC {\'e}rience personnelle d'attaque par escalade de privil\IeC {\`e}ges}{25}{subsection.3.4}
-\contentsline {subsection}{\numberline {3.5}Les bonnes pratiques \IeC {\`a} int\IeC {\'e}grer}{26}{subsection.3.5}
-\contentsline {subsubsection}{\numberline {3.5.1}Renforcer l'authentification}{27}{subsubsection.3.5.1}
-\contentsline {subsubsection}{\numberline {3.5.2}Minimiser les acc\IeC {\`e}s privil\IeC {\'e}gi\IeC {\'e}s}{27}{subsubsection.3.5.2}
-\contentsline {section}{Conclusion}{29}{section*.8}
-\contentsline {section}{R\IeC {\'e}f\IeC {\'e}rences}{30}{section*.9}
-\contentsline {section}{Annexe A}{31}{section*.11}
-\contentsline {subsection}{\numberline {1.6}Fonctionnement d\IeC {\'e}taill\IeC {\'e} des solutions de \gls {pam}}{31}{subsection.1.6}
-\contentsline {subsubsection}{\numberline {1.6.1}Sans solution de \gls {pam}}{31}{subsubsection.1.6.1}
-\contentsline {subsubsection}{\numberline {1.6.2}Avec solution de \gls {pam}}{32}{subsubsection.1.6.2}
-\contentsline {paragraph}{R\IeC {\'e}sum\IeC {\'e}}{36}{section*.12}
-\contentsline {paragraph}{Abstract}{37}{section*.13}
+\contentsline {section}{Liste des figures}{4}{section*.3}
+\contentsline {section}{Glossaire}{5}{section*.4}
+\contentsline {section}{Introduction}{6}{section*.6}
+\contentsline {section}{\numberline {1}Probl\IeC {\'e}matique : comment pallier le manque de contr\IeC {\^o}le des comptes privil\IeC {\'e}gi\IeC {\'e}s}{8}{section.1}
+\contentsline {subsection}{\numberline {1.1}Contexte}{8}{subsection.1.1}
+\contentsline {subsubsection}{\numberline {1.1.1}Les comptes \IeC {\`a} privil\IeC {\`e}ges}{8}{subsubsection.1.1.1}
+\contentsline {subsubsection}{\numberline {1.1.2}La gestion de comptes \IeC {\`a} privil\IeC {\`e}ges}{9}{subsubsection.1.1.2}
+\contentsline {subsection}{\numberline {1.2}Un point clef de la s\IeC {\'e}curit\IeC {\'e} des syst\IeC {\`e}mes d'information}{10}{subsection.1.2}
+\contentsline {subsubsection}{\numberline {1.2.1}Des prestataires de service ayant les clefs du royaume}{10}{subsubsection.1.2.1}
+\contentsline {subsubsection}{\numberline {1.2.2}Une cible de choix pour les pirates}{10}{subsubsection.1.2.2}
+\contentsline {subsubsection}{\numberline {1.2.3}Un manque de visibilit\IeC {\'e} d'actions}{11}{subsubsection.1.2.3}
+\contentsline {subsection}{\numberline {1.3}Objectifs d'un syst\IeC {\`e}me de \gls {pam}}{11}{subsection.1.3}
+\contentsline {subsection}{\numberline {1.4}Fonctionnement d'un syst\IeC {\`e}me de gestion de comptes \IeC {\`a} privil\IeC {\`e}ges}{12}{subsection.1.4}
+\contentsline {subsubsection}{\numberline {1.4.1}Cas g\IeC {\'e}n\IeC {\'e}ral}{12}{subsubsection.1.4.1}
+\contentsline {subsubsection}{\numberline {1.4.2}Deux types d'architecture}{13}{subsubsection.1.4.2}
+\contentsline {subsection}{\numberline {1.5}Les limitations des solutions \gls {pam}}{13}{subsection.1.5}
+\contentsline {subsubsection}{\numberline {1.5.1}Le facteur humain}{13}{subsubsection.1.5.1}
+\contentsline {subsubsection}{\numberline {1.5.2}La d\IeC {\'e}tection de comportements anormaux}{13}{subsubsection.1.5.2}
+\contentsline {section}{\numberline {2}M\IeC {\'e}thodes et moyens mis en \IeC {\oe }uvre}{15}{section.2}
+\contentsline {subsection}{\numberline {2.1}Gestion de projet}{15}{subsection.2.1}
+\contentsline {subsubsection}{\numberline {2.1.1}Analyse des besoins}{15}{subsubsection.2.1.1}
+\contentsline {subsubsection}{\numberline {2.1.2}Planning pr\IeC {\'e}visionnel}{16}{subsubsection.2.1.2}
+\contentsline {subsection}{\numberline {2.2}Recherche}{16}{subsection.2.2}
+\contentsline {subsubsection}{\numberline {2.2.1}Recherche du fonctionnement des solutions}{16}{subsubsection.2.2.1}
+\contentsline {subsubsection}{\numberline {2.2.2}Recherche des solutions existantes sur le march\IeC {\'e}}{17}{subsubsection.2.2.2}
+\contentsline {subsection}{\numberline {2.3}Proof of Concept}{18}{subsection.2.3}
+\contentsline {subsubsection}{\numberline {2.3.1}Architecture}{18}{subsubsection.2.3.1}
+\contentsline {subsubsection}{\numberline {2.3.2}Choix des solutions de \gls {pam} \IeC {\`a} tester}{20}{subsubsection.2.3.2}
+\contentsline {subsubsection}{\numberline {2.3.3}D\IeC {\'e}ploiement : Wallix AdminBastion}{21}{subsubsection.2.3.3}
+\contentsline {paragraph}{WAB}{22}{section*.7}
+\contentsline {paragraph}{WABAM}{23}{section*.8}
+\contentsline {subsubsection}{\numberline {2.3.4}Test : Wallix AdminBastion}{23}{subsubsection.2.3.4}
+\contentsline {subsubsection}{\numberline {2.3.5}D\IeC {\'e}ploiement : Thycotic Secret Server}{24}{subsubsection.2.3.5}
+\contentsline {subsubsection}{\numberline {2.3.6}Test : Thycotic Secret Server}{25}{subsubsection.2.3.6}
+\contentsline {section}{\numberline {3}R\IeC {\'e}sultats et discussion}{26}{section.3}
+\contentsline {subsection}{\numberline {3.1}Des solutions se d\IeC {\'e}marquant par des sp\IeC {\'e}cificit\IeC {\'e}s}{26}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}L'avenir dans le cloud}{27}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Une synergie entre solution de PAM et une f\IeC {\'e}d\IeC {\'e}ration d'identit\IeC {\'e}}{27}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}CamStudio 2.7.4 : exp\IeC {\'e}rience personnelle d'attaque par escalade de privil\IeC {\`e}ges}{27}{subsection.3.4}
+\contentsline {subsection}{\numberline {3.5}Les bonnes pratiques \IeC {\`a} int\IeC {\'e}grer}{28}{subsection.3.5}
+\contentsline {subsubsection}{\numberline {3.5.1}Renforcer l'authentification}{29}{subsubsection.3.5.1}
+\contentsline {subsubsection}{\numberline {3.5.2}Minimiser les acc\IeC {\`e}s privil\IeC {\'e}gi\IeC {\'e}s}{29}{subsubsection.3.5.2}
+\contentsline {section}{Conclusion}{31}{section*.9}
+\contentsline {section}{R\IeC {\'e}f\IeC {\'e}rences}{32}{section*.10}
+\contentsline {section}{Annexe A}{33}{section*.12}
+\contentsline {subsection}{\numberline {1.6}Fonctionnement d\IeC {\'e}taill\IeC {\'e} des solutions de \gls {pam}}{33}{subsection.1.6}
+\contentsline {subsubsection}{\numberline {1.6.1}Sans solution de \gls {pam}}{33}{subsubsection.1.6.1}
+\contentsline {subsubsection}{\numberline {1.6.2}Avec solution de \gls {pam}}{34}{subsubsection.1.6.2}
+\contentsline {paragraph}{R\IeC {\'e}sum\IeC {\'e}}{38}{section*.13}
+\contentsline {paragraph}{Abstract}{39}{section*.15}

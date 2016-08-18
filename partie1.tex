@@ -47,6 +47,14 @@ La gestion d’identités privilégiées est devenue de plus en plus importante,
 
 \subsection{Un point clef de la sécurité des systèmes d'information}
 
+\subsubsection{Des prestataires de service ayant les clefs du royaume}
+\label{par:presta_kingdom}
+
+Le principal point de sécurité posant question avec les comptes à privilèges est leur utilisateurs.\\
+Dans une entreprise, le personnel gérant l'infrastructure n'est pas forcément d'une dimension adaptée aux besoins. Cette dimension n'est souvent pas accessible et est comblée par l'embauche de prestataires de service. On peut prendre l'exemple d'une entreprise de taille moyenne, qui gère son infrastructure en autonomie. Seulement, l'entreprise grossit et une nouvelle infrastructure déployée en \emph{clusters}\footnote{Grappe de serveurs sur le réseau, aussi appelé ferme de calcul.} est nécessaire. Le personnel n'ayant pas les compétences pour réaliser cette mise à niveau, l'entreprise fait alors appel à une entreprise de service tierce, qui réalisera et maintiendra cette nouvelle infrastructure. Ce sont les prestataires de service.\\
+Cependant, ces prestataires doivent intervenir avec des droits élevés d'administration. Ils ont donc ce qu'on appelle les clefs du royaume\footnote{En anglais, littéralement \emph{keys to the kingdom}, représente l'accès sans limite à toute l'infrastructure informatique.}, sans aucune supervision.\\
+D'un point de vue sécurité, il est très risqué de recourir à de telles pratiques. C'est ici qu'une solution doit être trouvée, et c'est ici que les systèmes de gestion des comptes à privilèges ont un rôle clef.
+
 \subsubsection{Une cible de choix pour les pirates}
 Un compte privilégié est un compte utilisé par les administrateurs système et réseau, ainsi que par les équipes de sécurité pour accéder aux ressources réseau comme les serveurs, les pare-feux, les switches, les routeurs, les ordinateurs, les applications ou les base de données avec des droits élevés. Ces comptes sont nécessaire à la maintenance d'une infrastructure, tout comme aux interventions de réparation, de diagnostique ou gestion de situations de crise\footnote{Attaque sur un serveur par exemple}. Dans de grands groupes, il peut y avoir un grand nombre de ces comptes, de l'ordre de la centaine voir du millier d'entités, réparti sur plusieurs sites.\\
 Ces comptes peuvent aussi être des comptes d'application communicant avec d'autres applications\footnote{A2A : Application To Application, littéralement d'application à application}, comme par exemple un serveur faisant une sauvegarde régulière sur un autre serveur de récupération.\\
@@ -54,7 +62,7 @@ Tous ces comptes ne sont pas surveillés par les traditionnels gestionnaires d'i
 Ainsi, une personne mal intentionnée réussissant à voler les accès d'un tel compte verrait son pouvoir de destruction, voir de vol d'information sans limites, ce qui en fait une cible privilégiée par les pirates informatiques.
 
 \subsubsection{Un manque de visibilité d'actions} Comme abordé en introduction, il existe un grand manque de visibilité sur les actions des comptes à privilèges. En effet, ces comptes aux droits élevés, ne sont ni tracés, ni surveillés. Ceci peut avoir plusieurs mauvaises incidences, certaines intentionnelles et malveillantes, d'autre involontaires mais tout de même paralysantes.\\
-On peut classer ces incidences en deux catégories, l'une relevant d'une erreur accidentelle, et l'autre d'une volonté de nuire à une organisation :
+On peut classer ces incidences en deux catégories, l'une relevant d'une erreur accidentelle, et l'autre d'une volonté de nuire à une organisation comme le décrit l'article de \textsc{Shackleford} \cite{dsh} :
 \begin{itemize}
 	\item Erreur accidentelle :
 	\begin{arrowlist}
@@ -74,7 +82,7 @@ Ce manque de  visibilité crée aussi un point noir dans un audit de sécurité 
 D'après les points précédents, on peut en déduire les spécificités que nous voudrions améliorer vis-à-vis des comptes à privilèges :
 \begin{itemize}
 	\item Centraliser l’accès aux données de l’entreprise
- 	\item Sécuriser les comptes à privilèges (duo identifiants et mot de passse)
+ 	\item Sécuriser les comptes à privilèges (duo identifiants et mot de passe)
  	\item Gérer de manière forte des mots de passe et établir une politique d’authentification forte
 	\item Journaliser et superviser les activités des comptes à privilèges
 \end{itemize}
@@ -83,8 +91,8 @@ D'après les points précédents, on peut en déduire les spécificités que nou
 
 \subsubsection{Cas général}
 Le principe commun à toutes les solutions des éditeurs est la présence d'une identification sur un serveur central. On peut considérer 2 groupes : les comptes à privilèges et les ressources à protéger. Entre ces 2 entités vient s'intercaler le serveur d'identification, qui fait la passerelle entre les comptes et les ressources.\\
-L'identification d'un utilisateur sur un compte à privilèges se fait sur le serveur central, et l'identification de ce compte à privilèges sur une ressource protégée est déléguée au serveur central. Ainsi, les utilisateurs n'ont plus à gérer et connaître les mots de de passe d'accès au ressources protégées; c'est le serveur central qui détient tous les secrets\footnote{Les logins et mot de passe, aussi appelés \og credrentials \fg{} en anglais.}.\\
-Le serveur central a à sa charge de protéger les mots de passe dans un coffre-fort et de les renouveler régulièrement.
+L'identification d'un utilisateur sur un compte à privilèges se fait sur le serveur central, et l'identification de ce compte à privilèges sur une ressource protégée est déléguée au serveur central. Ainsi, les utilisateurs n'ont plus à gérer et connaître les mots de de passe d'accès au ressources protégées; c'est le serveur central qui détient tous les secrets\footnote{Les logins et mot de passe, aussi appelés \og \glspl{credential} \fg{} en anglais.}.\\
+Le serveur central a à sa charge de protéger les mots de passe dans un coffre-fort et de les renouveler régulièrement (il est préconisé de renouveler ses mots de passe au moins une fois par mois, ce qui est déjà peu pour une entreprise).
 
 \begin{figure}[!ht]
     \center

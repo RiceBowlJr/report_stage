@@ -1,45 +1,47 @@
 \BOOKMARK [1][-]{section*.1}{Remerciements}{}% 1
-\BOOKMARK [1][-]{section*.3}{Glossaire}{}% 2
-\BOOKMARK [1][-]{section*.5}{Introduction}{}% 3
-\BOOKMARK [1][-]{section.1}{Probl\351matique : comment pallier le manque de contr\364le des comptes privil\351gi\351s}{}% 4
-\BOOKMARK [2][-]{subsection.1.1}{Contexte}{section.1}% 5
-\BOOKMARK [3][-]{subsubsection.1.1.1}{Les comptes \340 privil\350ges}{subsection.1.1}% 6
-\BOOKMARK [3][-]{subsubsection.1.1.2}{La gestion de comptes \340 privil\350ges}{subsection.1.1}% 7
-\BOOKMARK [2][-]{subsection.1.2}{Un point clef de la s\351curit\351 des syst\350mes d'information}{section.1}% 8
-\BOOKMARK [3][-]{subsubsection.1.2.1}{Une cible de choix pour les pirates}{subsection.1.2}% 9
-\BOOKMARK [3][-]{subsubsection.1.2.2}{Un manque de visibilit\351 d'actions}{subsection.1.2}% 10
-\BOOKMARK [2][-]{subsection.1.3}{Objectifs d'un syst\350me de pam}{section.1}% 11
-\BOOKMARK [2][-]{subsection.1.4}{Fonctionnement d'un syst\350me de gestion de comptes \340 privil\350ges}{section.1}% 12
-\BOOKMARK [3][-]{subsubsection.1.4.1}{Cas g\351n\351ral}{subsection.1.4}% 13
-\BOOKMARK [3][-]{subsubsection.1.4.2}{Deux types d'architecture}{subsection.1.4}% 14
-\BOOKMARK [2][-]{subsection.1.5}{Les limitations des solutions pam}{section.1}% 15
-\BOOKMARK [3][-]{subsubsection.1.5.1}{Le facteur humain}{subsection.1.5}% 16
-\BOOKMARK [3][-]{subsubsection.1.5.2}{La d\351tection de comportements anormaux}{subsection.1.5}% 17
-\BOOKMARK [1][-]{section.2}{M\351thodes et moyens mis en \234uvre}{}% 18
-\BOOKMARK [2][-]{subsection.2.1}{Gestion de projet}{section.2}% 19
-\BOOKMARK [3][-]{subsubsection.2.1.1}{Analyse des besoins}{subsection.2.1}% 20
-\BOOKMARK [3][-]{subsubsection.2.1.2}{Planning pr\351visionnel}{subsection.2.1}% 21
-\BOOKMARK [2][-]{subsection.2.2}{Recherche}{section.2}% 22
-\BOOKMARK [3][-]{subsubsection.2.2.1}{Recherche du fonctionnement des solutions}{subsection.2.2}% 23
-\BOOKMARK [3][-]{subsubsection.2.2.2}{Recherche des solutions existantes sur le march\351}{subsection.2.2}% 24
-\BOOKMARK [2][-]{subsection.2.3}{Proof of Concept}{section.2}% 25
-\BOOKMARK [3][-]{subsubsection.2.3.1}{Architecture}{subsection.2.3}% 26
-\BOOKMARK [3][-]{subsubsection.2.3.2}{Choix des solutions de pam \340 tester}{subsection.2.3}% 27
-\BOOKMARK [3][-]{subsubsection.2.3.3}{D\351ploiement : Wallix AdminBastion}{subsection.2.3}% 28
-\BOOKMARK [3][-]{subsubsection.2.3.4}{Test : Wallix AdminBastion}{subsection.2.3}% 29
-\BOOKMARK [3][-]{subsubsection.2.3.5}{D\351ploiement : Thycotic Secret Server}{subsection.2.3}% 30
-\BOOKMARK [3][-]{subsubsection.2.3.6}{Test : Thycotic Secret Server}{subsection.2.3}% 31
-\BOOKMARK [1][-]{section.3}{R\351sultats et discussion}{}% 32
-\BOOKMARK [2][-]{subsection.3.1}{Des solutions se d\351marquant par des sp\351cificit\351s}{section.3}% 33
-\BOOKMARK [2][-]{subsection.3.2}{L'avenir dans le cloud}{section.3}% 34
-\BOOKMARK [2][-]{subsection.3.3}{Une synergie entre solution de PAM et une f\351d\351ration d'identit\351}{section.3}% 35
-\BOOKMARK [2][-]{subsection.3.4}{CamStudio 2.7.4 : exp\351rience personnelle d'attaque par escalade de privil\350ges}{section.3}% 36
-\BOOKMARK [2][-]{subsection.3.5}{Les bonnes pratiques \340 int\351grer}{section.3}% 37
-\BOOKMARK [3][-]{subsubsection.3.5.1}{Renforcer l'authentification}{subsection.3.5}% 38
-\BOOKMARK [3][-]{subsubsection.3.5.2}{Minimiser les acc\350s privil\351gi\351s}{subsection.3.5}% 39
-\BOOKMARK [1][-]{section*.8}{Conclusion}{}% 40
-\BOOKMARK [1][-]{section*.9}{R\351f\351rences}{}% 41
-\BOOKMARK [1][-]{section*.11}{Annexe A}{}% 42
-\BOOKMARK [2][-]{subsection.1.6}{Fonctionnement d\351taill\351 des solutions de pam}{section*.11}% 43
-\BOOKMARK [3][-]{subsubsection.1.6.1}{Sans solution de pam}{subsection.1.6}% 44
-\BOOKMARK [3][-]{subsubsection.1.6.2}{Avec solution de pam}{subsection.1.6}% 45
+\BOOKMARK [1][-]{section*.3}{Liste des figures}{}% 2
+\BOOKMARK [1][-]{section*.4}{Glossaire}{}% 3
+\BOOKMARK [1][-]{section*.6}{Introduction}{}% 4
+\BOOKMARK [1][-]{section.1}{Probl\351matique : comment pallier le manque de contr\364le des comptes privil\351gi\351s}{}% 5
+\BOOKMARK [2][-]{subsection.1.1}{Contexte}{section.1}% 6
+\BOOKMARK [3][-]{subsubsection.1.1.1}{Les comptes \340 privil\350ges}{subsection.1.1}% 7
+\BOOKMARK [3][-]{subsubsection.1.1.2}{La gestion de comptes \340 privil\350ges}{subsection.1.1}% 8
+\BOOKMARK [2][-]{subsection.1.2}{Un point clef de la s\351curit\351 des syst\350mes d'information}{section.1}% 9
+\BOOKMARK [3][-]{subsubsection.1.2.1}{Des prestataires de service ayant les clefs du royaume}{subsection.1.2}% 10
+\BOOKMARK [3][-]{subsubsection.1.2.2}{Une cible de choix pour les pirates}{subsection.1.2}% 11
+\BOOKMARK [3][-]{subsubsection.1.2.3}{Un manque de visibilit\351 d'actions}{subsection.1.2}% 12
+\BOOKMARK [2][-]{subsection.1.3}{Objectifs d'un syst\350me de pam}{section.1}% 13
+\BOOKMARK [2][-]{subsection.1.4}{Fonctionnement d'un syst\350me de gestion de comptes \340 privil\350ges}{section.1}% 14
+\BOOKMARK [3][-]{subsubsection.1.4.1}{Cas g\351n\351ral}{subsection.1.4}% 15
+\BOOKMARK [3][-]{subsubsection.1.4.2}{Deux types d'architecture}{subsection.1.4}% 16
+\BOOKMARK [2][-]{subsection.1.5}{Les limitations des solutions pam}{section.1}% 17
+\BOOKMARK [3][-]{subsubsection.1.5.1}{Le facteur humain}{subsection.1.5}% 18
+\BOOKMARK [3][-]{subsubsection.1.5.2}{La d\351tection de comportements anormaux}{subsection.1.5}% 19
+\BOOKMARK [1][-]{section.2}{M\351thodes et moyens mis en \234uvre}{}% 20
+\BOOKMARK [2][-]{subsection.2.1}{Gestion de projet}{section.2}% 21
+\BOOKMARK [3][-]{subsubsection.2.1.1}{Analyse des besoins}{subsection.2.1}% 22
+\BOOKMARK [3][-]{subsubsection.2.1.2}{Planning pr\351visionnel}{subsection.2.1}% 23
+\BOOKMARK [2][-]{subsection.2.2}{Recherche}{section.2}% 24
+\BOOKMARK [3][-]{subsubsection.2.2.1}{Recherche du fonctionnement des solutions}{subsection.2.2}% 25
+\BOOKMARK [3][-]{subsubsection.2.2.2}{Recherche des solutions existantes sur le march\351}{subsection.2.2}% 26
+\BOOKMARK [2][-]{subsection.2.3}{Proof of Concept}{section.2}% 27
+\BOOKMARK [3][-]{subsubsection.2.3.1}{Architecture}{subsection.2.3}% 28
+\BOOKMARK [3][-]{subsubsection.2.3.2}{Choix des solutions de pam \340 tester}{subsection.2.3}% 29
+\BOOKMARK [3][-]{subsubsection.2.3.3}{D\351ploiement : Wallix AdminBastion}{subsection.2.3}% 30
+\BOOKMARK [3][-]{subsubsection.2.3.4}{Test : Wallix AdminBastion}{subsection.2.3}% 31
+\BOOKMARK [3][-]{subsubsection.2.3.5}{D\351ploiement : Thycotic Secret Server}{subsection.2.3}% 32
+\BOOKMARK [3][-]{subsubsection.2.3.6}{Test : Thycotic Secret Server}{subsection.2.3}% 33
+\BOOKMARK [1][-]{section.3}{R\351sultats et discussion}{}% 34
+\BOOKMARK [2][-]{subsection.3.1}{Des solutions se d\351marquant par des sp\351cificit\351s}{section.3}% 35
+\BOOKMARK [2][-]{subsection.3.2}{L'avenir dans le cloud}{section.3}% 36
+\BOOKMARK [2][-]{subsection.3.3}{Une synergie entre solution de PAM et une f\351d\351ration d'identit\351}{section.3}% 37
+\BOOKMARK [2][-]{subsection.3.4}{CamStudio 2.7.4 : exp\351rience personnelle d'attaque par escalade de privil\350ges}{section.3}% 38
+\BOOKMARK [2][-]{subsection.3.5}{Les bonnes pratiques \340 int\351grer}{section.3}% 39
+\BOOKMARK [3][-]{subsubsection.3.5.1}{Renforcer l'authentification}{subsection.3.5}% 40
+\BOOKMARK [3][-]{subsubsection.3.5.2}{Minimiser les acc\350s privil\351gi\351s}{subsection.3.5}% 41
+\BOOKMARK [1][-]{section*.9}{Conclusion}{}% 42
+\BOOKMARK [1][-]{section*.10}{R\351f\351rences}{}% 43
+\BOOKMARK [1][-]{section*.12}{Annexe A}{}% 44
+\BOOKMARK [2][-]{subsection.1.6}{Fonctionnement d\351taill\351 des solutions de pam}{section*.12}% 45
+\BOOKMARK [3][-]{subsubsection.1.6.1}{Sans solution de pam}{subsection.1.6}% 46
+\BOOKMARK [3][-]{subsubsection.1.6.2}{Avec solution de pam}{subsection.1.6}% 47
