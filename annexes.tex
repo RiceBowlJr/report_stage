@@ -1,14 +1,17 @@
 \setcounter{section}{1}
-\section*{Annexe A}
-\label{annexe:A}
-\addcontentsline{toc}{section}{Annexe A}
 
-\subsection{Fonctionnement détaillé des solutions de \gls{pam}}
+% ==============================================
+% ================== ANNEXE A ==================
+% ==============================================
+
+\section*{Annexe A : Fonctionnement détaillé des solutions de \gls{pam}}
+\label{annexe:A}
+\addcontentsline{toc}{section}{Annexe A : Fonctionnement détaillé des solutions de \gls{pam}}
 
 Nous détaillerons dans cette annexe, le fonctionnement détaillé d'une solution de \gls{pam}. Afin d'illustrer les propos tenus, nous nous appuierons sur des schémas et digrammes de séquences.\\
 Avant d'expliquer le fonctionnement d'une solution de \gls{pam}, nous allons voir comment les systèmes fonctionnent en temps normal.
 
-\subsubsection{Sans solution de \gls{pam}}
+\subsection{Sans solution de \gls{pam}}
 \label{par:nopam}
 
 Dans ce scénario, les utilisateurs finaux possèdent le mot de passe d'accès direct à la ressource protégée, comme on peut le voir sur la \textsc{Figure} \ref{fig:sans_PAM}.
@@ -37,7 +40,7 @@ Le diagramme de séquence en \textsc{Figure} \ref{fig:diagseq_sans_PAM} décrit 
     \label{fig:invcont}
 \end{figure}
 
-\subsubsection{Avec solution de \gls{pam}}
+\subsection{Avec solution de \gls{pam}}
 \label{par:withpam}
 
 Dans ce scénario, une solution de \gls{pam} est en place. Ainsi les utilisateurs n'ont pas d'accès direct aux ressources cible. Toute l'architecture s'articule autour d'un composant central : le contrôleur d'accès appelé \gls{bastion}. Tout accès à une ressource cible se fait via ce \gls{bastion}. Cette architecture centralisée est schématisée dans la \textsc{Figure} \ref{fig:schempam}. Nous allons reprendre point par point un scénarion de connexion réussie à une ressource cible (en correspondance avec les étapes de la \textsc{Figure} \ref{fig:schempam}).
@@ -104,3 +107,21 @@ Durant toute ces étapes, des logs sont envoyés par le \gls{bastion}, afin de c
 	\item L'accès aux ressources cibles n'est pas direct, ce qui ajoute une couche de sécurité
 	\item L'utilisateur utilisant un jeton (accès secondaire) pour se connecter aux ressources cibles, il n'a donc plus besoin de connaître ces mots de passe secondaires. Ils peuvent donc être changés périodiquement pour rendre la connexion sans solution de PAM impossible
 \end{itemize}
+
+
+
+\pagebreak
+% ==============================================
+% ================== ANNEXE B ==================
+% ==============================================
+
+
+\section*{Annexe B : Extrait de l'état de l'art au format docx produit pour Synetis}
+\label{annexe:B}
+\addcontentsline{toc}{section}{Annexe B : Extrait de l'état de l'art au format docx produit pour Synetis}
+
+\begin{figure}[!ht]
+    \center
+    \includegraphics[width=\textwidth]{./images/extraitEDA.pdf}
+    \label{fig:diagseq_PAM}
+\end{figure}

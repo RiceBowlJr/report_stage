@@ -44,9 +44,9 @@
 \contentsline {subsubsection}{\numberline {3.5.2}Minimiser les acc\IeC {\`e}s privil\IeC {\'e}gi\IeC {\'e}s}{29}{subsubsection.3.5.2}
 \contentsline {section}{Conclusion}{31}{section*.9}
 \contentsline {section}{R\IeC {\'e}f\IeC {\'e}rences}{32}{section*.10}
-\contentsline {section}{Annexe A}{33}{section*.12}
-\contentsline {subsection}{\numberline {1.6}Fonctionnement d\IeC {\'e}taill\IeC {\'e} des solutions de \gls {pam}}{33}{subsection.1.6}
-\contentsline {subsubsection}{\numberline {1.6.1}Sans solution de \gls {pam}}{33}{subsubsection.1.6.1}
-\contentsline {subsubsection}{\numberline {1.6.2}Avec solution de \gls {pam}}{34}{subsubsection.1.6.2}
-\contentsline {paragraph}{R\IeC {\'e}sum\IeC {\'e}}{38}{section*.13}
-\contentsline {paragraph}{Abstract}{39}{section*.15}
+\contentsline {section}{Annexe A : Fonctionnement d\IeC {\'e}taill\IeC {\'e} des solutions de \gls {pam}}{33}{section*.12}
+\contentsline {subsection}{\numberline {1.6}Sans solution de \gls {pam}}{33}{subsection.1.6}
+\contentsline {subsection}{\numberline {1.7}Avec solution de \gls {pam}}{34}{subsection.1.7}
+\contentsline {section}{Annexe B : Extrait de l'\IeC {\'e}tat de l'art au format docx produit pour Synetis}{38}{section*.13}
+\contentsline {paragraph}{R\IeC {\'e}sum\IeC {\'e}}{39}{section*.14}
+\contentsline {paragraph}{Abstract}{40}{section*.16}
