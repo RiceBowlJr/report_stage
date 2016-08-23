@@ -14,39 +14,39 @@
 \contentsline {subsection}{\numberline {1.3}Objectifs d'un syst\IeC {\`e}me de \gls {pam}}{11}{subsection.1.3}
 \contentsline {subsection}{\numberline {1.4}Fonctionnement d'un syst\IeC {\`e}me de gestion de comptes \IeC {\`a} privil\IeC {\`e}ges}{12}{subsection.1.4}
 \contentsline {subsubsection}{\numberline {1.4.1}Cas g\IeC {\'e}n\IeC {\'e}ral}{12}{subsubsection.1.4.1}
-\contentsline {subsubsection}{\numberline {1.4.2}Deux types d'architecture}{13}{subsubsection.1.4.2}
+\contentsline {subsubsection}{\numberline {1.4.2}Deux types d'architecture}{12}{subsubsection.1.4.2}
 \contentsline {subsection}{\numberline {1.5}Les limitations des solutions \gls {pam}}{13}{subsection.1.5}
 \contentsline {subsubsection}{\numberline {1.5.1}Le facteur humain}{13}{subsubsection.1.5.1}
 \contentsline {subsubsection}{\numberline {1.5.2}La d\IeC {\'e}tection de comportements anormaux}{13}{subsubsection.1.5.2}
-\contentsline {section}{\numberline {2}M\IeC {\'e}thodes et moyens mis en \IeC {\oe }uvre}{15}{section.2}
-\contentsline {subsection}{\numberline {2.1}Gestion de projet}{15}{subsection.2.1}
-\contentsline {subsubsection}{\numberline {2.1.1}Analyse des besoins}{15}{subsubsection.2.1.1}
-\contentsline {subsubsection}{\numberline {2.1.2}Planning pr\IeC {\'e}visionnel}{16}{subsubsection.2.1.2}
-\contentsline {subsection}{\numberline {2.2}Recherche}{16}{subsection.2.2}
-\contentsline {subsubsection}{\numberline {2.2.1}Recherche du fonctionnement des solutions}{16}{subsubsection.2.2.1}
-\contentsline {subsubsection}{\numberline {2.2.2}Recherche des solutions existantes sur le march\IeC {\'e}}{17}{subsubsection.2.2.2}
-\contentsline {subsection}{\numberline {2.3}Proof of Concept}{18}{subsection.2.3}
-\contentsline {subsubsection}{\numberline {2.3.1}Architecture}{18}{subsubsection.2.3.1}
-\contentsline {subsubsection}{\numberline {2.3.2}Choix des solutions de \gls {pam} \IeC {\`a} tester}{20}{subsubsection.2.3.2}
-\contentsline {subsubsection}{\numberline {2.3.3}D\IeC {\'e}ploiement : Wallix AdminBastion}{21}{subsubsection.2.3.3}
-\contentsline {paragraph}{WAB}{22}{section*.7}
-\contentsline {paragraph}{WABAM}{23}{section*.8}
-\contentsline {subsubsection}{\numberline {2.3.4}Test : Wallix AdminBastion}{23}{subsubsection.2.3.4}
-\contentsline {subsubsection}{\numberline {2.3.5}D\IeC {\'e}ploiement : Thycotic Secret Server}{24}{subsubsection.2.3.5}
-\contentsline {subsubsection}{\numberline {2.3.6}Test : Thycotic Secret Server}{25}{subsubsection.2.3.6}
-\contentsline {section}{\numberline {3}R\IeC {\'e}sultats et discussion}{26}{section.3}
-\contentsline {subsection}{\numberline {3.1}Des solutions se d\IeC {\'e}marquant par des sp\IeC {\'e}cificit\IeC {\'e}s}{26}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}L'avenir dans le cloud}{27}{subsection.3.2}
-\contentsline {subsection}{\numberline {3.3}Une synergie entre solution de PAM et une f\IeC {\'e}d\IeC {\'e}ration d'identit\IeC {\'e}}{27}{subsection.3.3}
-\contentsline {subsection}{\numberline {3.4}CamStudio 2.7.4 : exp\IeC {\'e}rience personnelle d'attaque par escalade de privil\IeC {\`e}ges}{27}{subsection.3.4}
-\contentsline {subsection}{\numberline {3.5}Les bonnes pratiques \IeC {\`a} int\IeC {\'e}grer}{28}{subsection.3.5}
-\contentsline {subsubsection}{\numberline {3.5.1}Renforcer l'authentification}{29}{subsubsection.3.5.1}
-\contentsline {subsubsection}{\numberline {3.5.2}Minimiser les acc\IeC {\`e}s privil\IeC {\'e}gi\IeC {\'e}s}{29}{subsubsection.3.5.2}
-\contentsline {section}{Conclusion}{31}{section*.9}
-\contentsline {section}{R\IeC {\'e}f\IeC {\'e}rences}{32}{section*.10}
-\contentsline {section}{Annexe A : Fonctionnement d\IeC {\'e}taill\IeC {\'e} des solutions de \gls {pam}}{33}{section*.12}
-\contentsline {subsection}{\numberline {1.6}Sans solution de \gls {pam}}{33}{subsection.1.6}
-\contentsline {subsection}{\numberline {1.7}Avec solution de \gls {pam}}{34}{subsection.1.7}
-\contentsline {section}{Annexe B : Extrait de l'\IeC {\'e}tat de l'art au format docx produit pour Synetis}{38}{section*.13}
-\contentsline {paragraph}{R\IeC {\'e}sum\IeC {\'e}}{39}{section*.14}
-\contentsline {paragraph}{Abstract}{40}{section*.16}
+\contentsline {section}{\numberline {2}M\IeC {\'e}thodes et moyens mis en \IeC {\oe }uvre}{14}{section.2}
+\contentsline {subsection}{\numberline {2.1}Gestion de projet}{14}{subsection.2.1}
+\contentsline {subsubsection}{\numberline {2.1.1}Analyse des besoins}{14}{subsubsection.2.1.1}
+\contentsline {subsubsection}{\numberline {2.1.2}Planning pr\IeC {\'e}visionnel}{15}{subsubsection.2.1.2}
+\contentsline {subsection}{\numberline {2.2}Recherche}{15}{subsection.2.2}
+\contentsline {subsubsection}{\numberline {2.2.1}Recherche du fonctionnement des solutions}{15}{subsubsection.2.2.1}
+\contentsline {subsubsection}{\numberline {2.2.2}Recherche des solutions existantes sur le march\IeC {\'e}}{16}{subsubsection.2.2.2}
+\contentsline {subsection}{\numberline {2.3}Proof of Concept}{17}{subsection.2.3}
+\contentsline {subsubsection}{\numberline {2.3.1}Architecture}{17}{subsubsection.2.3.1}
+\contentsline {subsubsection}{\numberline {2.3.2}Choix des solutions de \gls {pam} \IeC {\`a} tester}{19}{subsubsection.2.3.2}
+\contentsline {subsubsection}{\numberline {2.3.3}D\IeC {\'e}ploiement : Wallix AdminBastion}{20}{subsubsection.2.3.3}
+\contentsline {paragraph}{WAB}{21}{section*.7}
+\contentsline {paragraph}{WABAM}{22}{section*.8}
+\contentsline {subsubsection}{\numberline {2.3.4}Test : Wallix AdminBastion}{22}{subsubsection.2.3.4}
+\contentsline {subsubsection}{\numberline {2.3.5}D\IeC {\'e}ploiement : Thycotic Secret Server}{23}{subsubsection.2.3.5}
+\contentsline {subsubsection}{\numberline {2.3.6}Test : Thycotic Secret Server}{24}{subsubsection.2.3.6}
+\contentsline {section}{\numberline {3}R\IeC {\'e}sultats et discussion}{25}{section.3}
+\contentsline {subsection}{\numberline {3.1}Des solutions se d\IeC {\'e}marquant par des sp\IeC {\'e}cificit\IeC {\'e}s}{25}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}L'avenir dans le cloud}{26}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Une synergie entre solution de PAM et une f\IeC {\'e}d\IeC {\'e}ration d'identit\IeC {\'e}}{26}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}CamStudio 2.7.4 : exp\IeC {\'e}rience personnelle d'attaque par escalade de privil\IeC {\`e}ges}{26}{subsection.3.4}
+\contentsline {subsection}{\numberline {3.5}Les bonnes pratiques \IeC {\`a} int\IeC {\'e}grer}{27}{subsection.3.5}
+\contentsline {subsubsection}{\numberline {3.5.1}Renforcer l'authentification}{28}{subsubsection.3.5.1}
+\contentsline {subsubsection}{\numberline {3.5.2}Minimiser les acc\IeC {\`e}s privil\IeC {\'e}gi\IeC {\'e}s}{28}{subsubsection.3.5.2}
+\contentsline {section}{Conclusion}{30}{section*.9}
+\contentsline {section}{R\IeC {\'e}f\IeC {\'e}rences}{31}{section*.10}
+\contentsline {section}{Annexe A : Fonctionnement d\IeC {\'e}taill\IeC {\'e} des solutions de \gls {pam}}{32}{section*.12}
+\contentsline {subsection}{\numberline {1.6}Sans solution de \gls {pam}}{32}{subsection.1.6}
+\contentsline {subsection}{\numberline {1.7}Avec solution de \gls {pam}}{33}{subsection.1.7}
+\contentsline {section}{Annexe B : Extrait de l'\IeC {\'e}tat de l'art au format docx produit pour Synetis}{37}{section*.13}
+\contentsline {paragraph}{R\IeC {\'e}sum\IeC {\'e}}{38}{section*.14}
+\contentsline {paragraph}{Abstract}{39}{section*.16}

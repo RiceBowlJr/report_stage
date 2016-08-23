@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.7.6)  22 AUG 2016 16:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.7.6)  23 AUG 2016 11:01
 entering extended mode
 **./rapport.tex
 (rapport.tex
@@ -1278,10 +1278,10 @@ LaTeX Font Info:    Try loading font information for T1+cmtt on input line 17.
 
 (D:\users\SYNETIS\Alexandre_kervadec\LaTeX\tex\latex\base\t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)) [6
+) [6
 
 
-]
+])
 [7]
 \openout2 = `partie1.aux'.
 
@@ -1311,18 +1311,18 @@ Package pdftex.def Info: ./images/Schema_ultra_light_PAM.png used on input line
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\gls' on input line 111.
 
-[13]) [14]
+) [13]
 \openout2 = `partie2.aux'.
 
  (partie2.tex
-<./images/calendrier_previsionnel.png, id=448, 1394.20876pt x 408.77719pt>
+<./images/calendrier_previsionnel.png, id=444, 1394.20876pt x 408.77719pt>
 File: ./images/calendrier_previsionnel.png Graphic file (type png)
 
 <use ./images/calendrier_previsionnel.png>
 Package pdftex.def Info: ./images/calendrier_previsionnel.png used on input lin
 e 22.
 (pdftex.def)             Requested size: 360.0pt x 105.54977pt.
- [15
+ [14
 
 
 
@@ -1331,8 +1331,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 35--36
 
  []
 
-[16 <./images/calendrier_previsionnel.png>]
-<./images/forrester_quadrant.png, id=463, 548.0475pt x 554.82281pt>
+[15 <./images/calendrier_previsionnel.png>]
+<./images/forrester_quadrant.png, id=459, 548.0475pt x 554.82281pt>
 File: ./images/forrester_quadrant.png Graphic file (type png)
 
 <use ./images/forrester_quadrant.png>
@@ -1340,18 +1340,18 @@ Package pdftex.def Info: ./images/forrester_quadrant.png used on input line 43.
 
 (pdftex.def)             Requested size: 251.9989pt x 255.12pt.
 
-<./images/tabcomp.png, id=468, 770.88pt x 709.14937pt>
+<./images/tabcomp.png, id=464, 770.88pt x 709.14937pt>
 File: ./images/tabcomp.png Graphic file (type png)
 
 <use ./images/tabcomp.png>
 Package pdftex.def Info: ./images/tabcomp.png used on input line 52.
 (pdftex.def)             Requested size: 360.0pt x 331.16856pt.
- [17] [18 <./images/forrester_quadrant.png>] [19 <./images/tabcomp.png>]
+ [16] [17 <./images/forrester_quadrant.png>] [18 <./images/tabcomp.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\gls' on input line 99.
 
-[20] <./images/PoC_archi_reelle.png, id=517, 486.81876pt x 683.55376pt>
+[19] <./images/PoC_archi_reelle.png, id=513, 486.81876pt x 683.55376pt>
 File: ./images/PoC_archi_reelle.png Graphic file (type png)
 
 <use ./images/PoC_archi_reelle.png>
@@ -1362,18 +1362,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 124--125
 
  []
 
-[21] [22 <./images/PoC_archi_reelle.png>] [23] [24]) [25]
+[20] [21 <./images/PoC_archi_reelle.png>] [22] [23]) [24]
 \openout2 = `partie3.aux'.
 
- (partie3.tex [26
+ (partie3.tex [25
 
 
 
 ]
-[27] [28] [29]) [30]
+[26] [27] [28]) [29]
 \openout2 = `concl.aux'.
 
- (concl.tex) [31
+ (concl.tex) [30
 
 
 
@@ -1414,7 +1414,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 8--9
 ry-
  []
 
-) [32
+) [31
 
 
 
@@ -1430,7 +1430,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\gls' on input line 14.
 
-<./images/Schema_ultra_light_sans_PAM.png, id=632, 481.8pt x 179.16937pt>
+<./images/Schema_ultra_light_sans_PAM.png, id=629, 481.8pt x 179.16937pt>
 File: ./images/Schema_ultra_light_sans_PAM.png Graphic file (type png)
 
 <use ./images/Schema_ultra_light_sans_PAM.png>
@@ -1443,19 +1443,19 @@ Underfull \hbox (badness 5022) in paragraph at lines 26--28
 er-
  []
 
-<./images/Sequence_noPAM_use.png, id=637, 549.55313pt x 325.215pt>
+<./images/Sequence_noPAM_use.png, id=634, 549.55313pt x 325.215pt>
 File: ./images/Sequence_noPAM_use.png Graphic file (type png)
 
 <use ./images/Sequence_noPAM_use.png>
 Package pdftex.def Info: ./images/Sequence_noPAM_use.png used on input line 31.
 
 (pdftex.def)             Requested size: 360.0pt x 213.04468pt.
- [33
+ [32
 
 
 
  <./images/Schema_ultra_light_sans_PAM.png>] <./images/ressource_centered.png, 
-id=646, 737.75626pt x 238.8925pt>
+id=642, 737.75626pt x 238.8925pt>
 File: ./images/ressource_centered.png Graphic file (type png)
 
 <use ./images/ressource_centered.png>
@@ -1467,14 +1467,14 @@ Package pdftex.def Info: ./images/ressource_centered.png used on input line 38.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\gls' on input line 43.
 
-<./images/Schema_PAM.png, id=653, 848.16875pt x 591.20876pt>
+<./images/Schema_PAM.png, id=649, 848.16875pt x 591.20876pt>
 File: ./images/Schema_PAM.png Graphic file (type png)
 
 <use ./images/Schema_PAM.png>
 Package pdftex.def Info: ./images/Schema_PAM.png used on input line 50.
 (pdftex.def)             Requested size: 360.0pt x 250.93112pt.
- [34 <./images/Sequence_noPAM_use.png> <./images/ressource_centered.png>]
-<./images/Sequence_PAM_use.png, id=669, 790.45313pt x 795.72281pt>
+ [33 <./images/Sequence_noPAM_use.png> <./images/ressource_centered.png>]
+<./images/Sequence_PAM_use.png, id=665, 790.45313pt x 795.72281pt>
 File: ./images/Sequence_PAM_use.png Graphic file (type png)
 
 <use ./images/Sequence_PAM_use.png>
@@ -1485,25 +1485,25 @@ Overfull \hbox (71.9989pt too wide) in paragraph at lines 68--69
  [] 
  []
 
-[35 <./images/Schema_PAM.png>] [36 <./images/Sequence_PAM_use.png>] [37]
-<./images/extraitEDA.pdf, id=701, 597.23125pt x 845.1575pt>
+[34 <./images/Schema_PAM.png>] [35 <./images/Sequence_PAM_use.png>] [36]
+<./images/extraitEDA.pdf, id=697, 597.23125pt x 845.1575pt>
 File: ./images/extraitEDA.pdf Graphic file (type pdf)
 
 <use ./images/extraitEDA.pdf>
 Package pdftex.def Info: ./images/extraitEDA.pdf used on input line 125.
 (pdftex.def)             Requested size: 360.0pt x 509.4455pt.
-) [38 <./images/extraitEDA.pdf>]
+) [37 <./images/extraitEDA.pdf>]
 \openout2 = `resume.aux'.
 
  (resume.tex)
-[39
+[38
 
 
 
 ]
 \openout2 = `abstract.aux'.
 
- (abstract.tex) [40
+ (abstract.tex) [39
 
 
 
@@ -1533,8 +1533,8 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 70.
  ) 
 Here is how much of TeX's memory you used:
- 22474 strings out of 493335
- 403892 string characters out of 3133259
+ 22473 strings out of 493335
+ 403885 string characters out of 3133259
  540966 words of memory out of 3000000
  25268 multiletter control sequences out of 15000+200000
  22509 words of font info for 49 fonts, out of 3000000 for 9000
@@ -1565,9 +1565,9 @@ AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\eccc1440.pk><D:/use
 rs/SYNETIS/Alexandre_kervadec/LaTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><
 D:/users/SYNETIS/Alexandre_kervadec/LaTeX/fonts/type1/public/amsfonts/cm/cmsy8.
 pfb>
-Output written on rapport.pdf (41 pages, 1547220 bytes).
+Output written on rapport.pdf (40 pages, 1546169 bytes).
 PDF statistics:
- 1497 PDF objects out of 1728 (max. 8388607)
- 179 named destinations out of 1000 (max. 500000)
+ 1495 PDF objects out of 1728 (max. 8388607)
+ 178 named destinations out of 1000 (max. 500000)
  454 words of extra memory for PDF output out of 10000 (max. 10000000)
 

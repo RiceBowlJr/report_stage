@@ -1,11 +1,11 @@
 \select@language {french}
 \contentsline {figure}{\numberline {1}{\ignorespaces Fonctionnement g\IeC {\'e}n\IeC {\'e}ral d'un syst\IeC {\`e}me de \gls {pam}}}{12}{figure.1}
-\contentsline {figure}{\numberline {2}{\ignorespaces Calendrier pr\IeC {\'e}visionnel}}{16}{figure.2}
-\contentsline {figure}{\numberline {3}{\ignorespaces Quadrant mettant en \IeC {\'e}vidence les acteurs du march\IeC {\'e} de \gls {pam} selon le rapport offre/strat\IeC {\'e}gie et l'indice de pr\IeC {\'e}sence sur le march\IeC {\'e}}}{18}{figure.3}
-\contentsline {figure}{\numberline {4}{\ignorespaces Extrait du tableau comparatif de solutions \IeC {\'e}dit\IeC {\'e} au terme de la phase de recherche}}{19}{figure.4}
-\contentsline {figure}{\numberline {5}{\ignorespaces Architecture mise \IeC {\`a} l'\IeC {\'e}chelle des ressources disponibles chez \textsc {Synetis}}}{22}{figure.5}
-\contentsline {figure}{\numberline {6}{\ignorespaces Connexion \IeC {\`a} une ressource prot\IeC {\'e}g\IeC {\'e}e sans solution de \gls {pam}}}{33}{figure.6}
-\contentsline {figure}{\numberline {7}{\ignorespaces Diagramme de s\IeC {\'e}quence d\IeC {\'e}taillant les actions effectu\IeC {\'e}es lors d'une connexion \IeC {\`a} une ressource sans solution de \gls {pam}}}{34}{figure.7}
-\contentsline {figure}{\numberline {8}{\ignorespaces Sch\IeC {\'e}ma mettant en \IeC {\'e}vidence l'inversion du contr\IeC {\^o}le de s\IeC {\'e}curit\IeC {\'e}, mis sur les ressources plut\IeC {\^o}t que sur les utilisateurs}}{34}{figure.8}
-\contentsline {figure}{\numberline {9}{\ignorespaces Sch\IeC {\'e}ma d\IeC {\'e}crivant l'architecture d'une solution de \gls {pam} int\IeC {\'e}gr\IeC {\'e}e dans une infrastructure}}{35}{figure.9}
-\contentsline {figure}{\numberline {10}{\ignorespaces Diagramme de s\IeC {\'e}quence d\IeC {\'e}taillant les actions effectu\IeC {\'e}es lors d'une connexion \IeC {\`a} une ressource avec une solution de \gls {pam}}}{36}{figure.10}
+\contentsline {figure}{\numberline {2}{\ignorespaces Calendrier pr\IeC {\'e}visionnel}}{15}{figure.2}
+\contentsline {figure}{\numberline {3}{\ignorespaces Quadrant mettant en \IeC {\'e}vidence les acteurs du march\IeC {\'e} de \gls {pam} selon le rapport offre/strat\IeC {\'e}gie et l'indice de pr\IeC {\'e}sence sur le march\IeC {\'e}}}{17}{figure.3}
+\contentsline {figure}{\numberline {4}{\ignorespaces Extrait du tableau comparatif de solutions \IeC {\'e}dit\IeC {\'e} au terme de la phase de recherche}}{18}{figure.4}
+\contentsline {figure}{\numberline {5}{\ignorespaces Architecture mise \IeC {\`a} l'\IeC {\'e}chelle des ressources disponibles chez \textsc {Synetis}}}{21}{figure.5}
+\contentsline {figure}{\numberline {6}{\ignorespaces Connexion \IeC {\`a} une ressource prot\IeC {\'e}g\IeC {\'e}e sans solution de \gls {pam}}}{32}{figure.6}
+\contentsline {figure}{\numberline {7}{\ignorespaces Diagramme de s\IeC {\'e}quence d\IeC {\'e}taillant les actions effectu\IeC {\'e}es lors d'une connexion \IeC {\`a} une ressource sans solution de \gls {pam}}}{33}{figure.7}
+\contentsline {figure}{\numberline {8}{\ignorespaces Sch\IeC {\'e}ma mettant en \IeC {\'e}vidence l'inversion du contr\IeC {\^o}le de s\IeC {\'e}curit\IeC {\'e}, mis sur les ressources plut\IeC {\^o}t que sur les utilisateurs}}{33}{figure.8}
+\contentsline {figure}{\numberline {9}{\ignorespaces Sch\IeC {\'e}ma d\IeC {\'e}crivant l'architecture d'une solution de \gls {pam} int\IeC {\'e}gr\IeC {\'e}e dans une infrastructure}}{34}{figure.9}
+\contentsline {figure}{\numberline {10}{\ignorespaces Diagramme de s\IeC {\'e}quence d\IeC {\'e}taillant les actions effectu\IeC {\'e}es lors d'une connexion \IeC {\`a} une ressource avec une solution de \gls {pam}}}{35}{figure.10}
