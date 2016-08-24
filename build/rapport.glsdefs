@@ -88,17 +88,17 @@ parent={},%
 %
 }%
 }%
-\ifglsentryexists{stratch}{}%
+\ifglsentryexists{scratch}{}%
 {%
-\gls@defglossaryentry{stratch}%
+\gls@defglossaryentry{scratch}%
 {%
-name={from stratch},%
-sort={from stratch},%
+name={from scratch},%
+sort={from scratch},%
 type={main},%
-first={from stratch},%
-firstplural={from stratchs},%
-text={from stratch},%
-plural={from stratchs},%
+first={from scratch},%
+firstplural={from scratchs},%
+text={from scratch},%
+plural={from scratchs},%
 description={démarrer un projet depuis rien, à partir de zéro},%
 descriptionplural={démarrer un projet depuis rien, à partir de zéro},%
 symbol={\relax },%

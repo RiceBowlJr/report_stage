@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.7.6)  23 AUG 2016 14:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.7.6)  24 AUG 2016 15:34
 entering extended mode
 **./rapport.tex
 (rapport.tex
@@ -1299,7 +1299,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 41--47
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\gls' on input line 80.
 
-[11] <./images/Schema_ultra_light_PAM.png, id=422, 481.8pt x 213.04594pt>
+[11] <./images/Schema_ultra_light_PAM.png, id=430, 481.8pt x 213.04594pt>
 File: ./images/Schema_ultra_light_PAM.png Graphic file (type png)
 
 <use ./images/Schema_ultra_light_PAM.png>
@@ -1315,7 +1315,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 \openout2 = `partie2.aux'.
 
  (partie2.tex
-<./images/calendrier_previsionnel.png, id=444, 1394.20876pt x 408.77719pt>
+<./images/calendrier_previsionnel.png, id=451, 1394.20876pt x 408.77719pt>
 File: ./images/calendrier_previsionnel.png Graphic file (type png)
 
 <use ./images/calendrier_previsionnel.png>
@@ -1332,7 +1332,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 35--36
  []
 
 [15 <./images/calendrier_previsionnel.png>]
-<./images/forrester_quadrant.png, id=459, 548.0475pt x 554.82281pt>
+<./images/forrester_quadrant.png, id=466, 548.0475pt x 554.82281pt>
 File: ./images/forrester_quadrant.png Graphic file (type png)
 
 <use ./images/forrester_quadrant.png>
@@ -1340,7 +1340,7 @@ Package pdftex.def Info: ./images/forrester_quadrant.png used on input line 43.
 
 (pdftex.def)             Requested size: 251.9989pt x 255.12pt.
 
-<./images/tabcomp.png, id=464, 770.88pt x 709.14937pt>
+<./images/tabcomp.png, id=471, 770.88pt x 709.14937pt>
 File: ./images/tabcomp.png Graphic file (type png)
 
 <use ./images/tabcomp.png>
@@ -1351,7 +1351,7 @@ Package pdftex.def Info: ./images/tabcomp.png used on input line 52.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\gls' on input line 99.
 
-[19] <./images/PoC_archi_reelle.png, id=513, 486.81876pt x 683.55376pt>
+[19] <./images/PoC_archi_reelle.png, id=521, 486.81876pt x 683.55376pt>
 File: ./images/PoC_archi_reelle.png Graphic file (type png)
 
 <use ./images/PoC_archi_reelle.png>
@@ -1430,7 +1430,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\gls' on input line 14.
 
-<./images/Schema_ultra_light_sans_PAM.png, id=629, 481.8pt x 179.16937pt>
+<./images/Schema_ultra_light_sans_PAM.png, id=636, 481.8pt x 179.16937pt>
 File: ./images/Schema_ultra_light_sans_PAM.png Graphic file (type png)
 
 <use ./images/Schema_ultra_light_sans_PAM.png>
@@ -1443,7 +1443,7 @@ Underfull \hbox (badness 5022) in paragraph at lines 26--28
 er-
  []
 
-<./images/Sequence_noPAM_use.png, id=634, 549.55313pt x 325.215pt>
+<./images/Sequence_noPAM_use.png, id=641, 549.55313pt x 325.215pt>
 File: ./images/Sequence_noPAM_use.png Graphic file (type png)
 
 <use ./images/Sequence_noPAM_use.png>
@@ -1455,7 +1455,7 @@ Package pdftex.def Info: ./images/Sequence_noPAM_use.png used on input line 31.
 
 
  <./images/Schema_ultra_light_sans_PAM.png>] <./images/ressource_centered.png, 
-id=642, 737.75626pt x 238.8925pt>
+id=649, 737.75626pt x 238.8925pt>
 File: ./images/ressource_centered.png Graphic file (type png)
 
 <use ./images/ressource_centered.png>
@@ -1467,14 +1467,14 @@ Package pdftex.def Info: ./images/ressource_centered.png used on input line 38.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\gls' on input line 43.
 
-<./images/Schema_PAM.png, id=649, 848.16875pt x 591.20876pt>
+<./images/Schema_PAM.png, id=656, 848.16875pt x 591.20876pt>
 File: ./images/Schema_PAM.png Graphic file (type png)
 
 <use ./images/Schema_PAM.png>
 Package pdftex.def Info: ./images/Schema_PAM.png used on input line 50.
 (pdftex.def)             Requested size: 360.0pt x 250.93112pt.
  [33 <./images/Sequence_noPAM_use.png> <./images/ressource_centered.png>]
-<./images/Sequence_PAM_use.png, id=665, 790.45313pt x 795.72281pt>
+<./images/Sequence_PAM_use.png, id=671, 790.45313pt x 795.72281pt>
 File: ./images/Sequence_PAM_use.png Graphic file (type png)
 
 <use ./images/Sequence_PAM_use.png>
@@ -1486,7 +1486,7 @@ Overfull \hbox (71.9989pt too wide) in paragraph at lines 68--69
  []
 
 [34 <./images/Schema_PAM.png>] [35 <./images/Sequence_PAM_use.png>] [36]
-<./images/extraitEDA.pdf, id=697, 597.23125pt x 845.1575pt>
+<./images/extraitEDA.pdf, id=701, 597.23125pt x 845.1575pt>
 File: ./images/extraitEDA.pdf Graphic file (type pdf)
 
 <use ./images/extraitEDA.pdf>
@@ -1565,9 +1565,9 @@ AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\eccc1440.pk><D:/use
 rs/SYNETIS/Alexandre_kervadec/LaTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><
 D:/users/SYNETIS/Alexandre_kervadec/LaTeX/fonts/type1/public/amsfonts/cm/cmsy8.
 pfb>
-Output written on rapport.pdf (40 pages, 1546209 bytes).
+Output written on rapport.pdf (40 pages, 1546975 bytes).
 PDF statistics:
- 1495 PDF objects out of 1728 (max. 8388607)
+ 1499 PDF objects out of 1728 (max. 8388607)
  178 named destinations out of 1000 (max. 500000)
  454 words of extra memory for PDF output out of 10000 (max. 10000000)
 
